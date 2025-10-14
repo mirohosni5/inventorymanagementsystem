@@ -19,5 +19,8 @@ public String getEmployeeId() {
         return employeeId;}
     public String getEmail() {
         return employeeId;}
+    public String getAddress() {
+        return employeeId;}
+    
 
 }
