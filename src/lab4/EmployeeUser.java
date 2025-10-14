@@ -1,4 +1,4 @@
 package lab4;
 
 public class EmployeeUser {
-private String employee 
+private String employeeId;
