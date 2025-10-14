@@ -57,6 +57,7 @@ public class EmployeeUser {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+    
 public static boolean checkId(String idCheck,List<EmployeeUser> employes){
 for (EmployeeUser employeesinside : employes){
     if (idCheck !=null&&idCheck.equalsIgnoreCase(employeesinside.getSearchKey())){ //iused the Ignore case here to ignore letter case
