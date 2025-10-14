@@ -13,6 +13,7 @@ public EmployeeUser(String employeeId, String name, String email, String address
     this.address = address;
     this.phoneNumber = phoneNumber;
 }
+//getters
 public String getEmployeeId() {
     return employeeId;}
     public String getName() {
@@ -23,7 +24,7 @@ public String getEmployeeId() {
         return employeeId;}
     public String getPhoneNumber() {
         return employeeId;}
-//setter
+//setters
 public void setEmployeeId(String employeeId) {
     this.employeeId = employeeId;
 }
