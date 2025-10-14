@@ -59,7 +59,7 @@ public class EmployeeUser {
     }
 public static boolean checkId(String idCheck,List<EmployeeUser> employes){
 for (EmployeeUser employeesinside : employes){
-    if (idCheck !=null&&idCheck.equalsIgnoreCase(employeesinside.getSearchKey())){ //ius
+    if (idCheck !=null&&idCheck.equalsIgnoreCase(employeesinside.getSearchKey())){ //iused the Ignore case her
         return true;
     }
 
