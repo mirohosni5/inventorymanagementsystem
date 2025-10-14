@@ -17,6 +17,7 @@ public String getEmployeeId() {
     return employeeId;
     public String getName() {
         return employeeId;}
-    
+    public String getEmail() {
+        return employeeId;}
 
 }
