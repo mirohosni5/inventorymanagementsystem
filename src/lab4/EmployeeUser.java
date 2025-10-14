@@ -1,5 +1,5 @@
 package lab4;
-import.util.A
+import.util.ArrayList;
 public class EmployeeUser {
 private String employeeId;
 private String name;
