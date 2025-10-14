@@ -42,13 +42,15 @@ public void setPhoneNumber(String phoneNumber) {
     this.phoneNumber = phoneNumber;
 }
 //methods
-    public String lineRepresentation{
-    return employeeId + "," + name + "," + email + "," + address + "," + phoneNumber;
+    public String lineRepresentation
 
-}
-    
+    {
+        return employeeId + "," + name + "," + email + "," + address + "," + phoneNumber;
 
     }
+
+
+}
 
 
 
