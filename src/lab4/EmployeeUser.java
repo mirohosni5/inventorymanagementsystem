@@ -58,7 +58,11 @@ public class EmployeeUser {
         this.phoneNumber = phoneNumber;
     }
 public static boolean checkId(String idCheck,List<EmployeeUser> employes){
-for ()
+for (EmployeeUser employee : employes){
+    if (employee.getEmployeeId().equals(idCheck)){
+        return true;
+    }
+})
 }
     //methods
     public String lineRepresentation() {
