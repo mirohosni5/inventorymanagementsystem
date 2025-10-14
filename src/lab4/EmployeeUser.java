@@ -30,6 +30,12 @@ public void setEmployeeId(String employeeId) {
 public void setName(String name) {
     this.name = name;
 }
+public void setEmail(String email) {
+    this.email = email;
+}
+public void setAddress(String address) {
+    this.address = address;
+}
 
 
 }
