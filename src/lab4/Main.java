@@ -6,7 +6,7 @@ package lab4;
 
     public class Main {
         public static void main(String[] args) {
-            System.out.println("App is running heello world ✅"); //hi there there bb bb bbbbb
+            System.out.println("App is running heello worldbb ✅"); //hi there there bb bb bbbbb
 
         }
     }
