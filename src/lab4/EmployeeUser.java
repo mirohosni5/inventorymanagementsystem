@@ -63,7 +63,7 @@ for (EmployeeUser emp : employes){
         return true;
     }
     return false;
-})
+}
 }
     //methods
     public String lineRepresentation() {
