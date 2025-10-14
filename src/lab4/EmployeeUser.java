@@ -43,7 +43,7 @@ public void setPhoneNumber(String phoneNumber) {
 }
 //methods
     public String lineRepresentation{
-    
+    return employeeId + "," + name + "," + email + "," + address + "," + phoneNumber;
 
     
 
