@@ -2,4 +2,4 @@ package lab4;
 
 public class EmployeeUser {
 private String employeeId;
-private String password;
+private String name;
