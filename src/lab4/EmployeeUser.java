@@ -27,6 +27,9 @@ public String getEmployeeId() {
 public void setEmployeeId(String employeeId) {
     this.employeeId = employeeId;
 }
+public void setName(String name) {
+    this.name = name;
+}
 
 
 }
