@@ -58,11 +58,11 @@ public class EmployeeUser {
         this.phoneNumber = phoneNumber;
     }
 public static boolean checkId(String idCheck,List<EmployeeUser> employes){
-        
+
 }
     //methods
     public String lineRepresentation() {
-        return employeeId + "," + name + "," + email + "," + address + "," + phoneNumber;
+        return
     }
 
     public String getSearchKey() {
