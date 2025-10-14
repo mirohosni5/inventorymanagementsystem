@@ -42,7 +42,7 @@ public void setPhoneNumber(String phoneNumber) {
     this.phoneNumber = phoneNumber;
 }
 //methods
-    public String lineRepresentati{
+    public String lineRepresentation{
 
     
 
