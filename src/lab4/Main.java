@@ -6,7 +6,7 @@ package lab4;
 
     public class Main {
         public static void main(String[] args) {
-            System.out.println("App is running ✅"); //hi there
+            System.out.println("App is running ✅"); //hi there there bb bb bbbbb
 
         }
     }
