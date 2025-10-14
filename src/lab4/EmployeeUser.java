@@ -1,5 +1,5 @@
 package lab4;
-
+import
 public class EmployeeUser {
 private String employeeId;
 private String name;
