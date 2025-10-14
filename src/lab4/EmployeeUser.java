@@ -57,7 +57,7 @@ public class EmployeeUser {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-public static boolean chec
+public static boolean checkId()
     //methods
     public String lineRepresentation() {
         return employeeId + "," + name + "," + email + "," + address + "," + phoneNumber;
