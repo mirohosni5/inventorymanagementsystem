@@ -62,7 +62,7 @@ public static boolean checkId(String idCheck,List<EmployeeUser> employes){
 }
     //methods
     public String lineRepresentation() {
-        return String.join("")
+        return String.join(",",)
     }
 
     public String getSearchKey() {
