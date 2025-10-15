@@ -74,7 +74,7 @@ public class EmployeeUser {
     }
 
     public String getSearchKey(List<EmployeeUser>employees) {
-        EmployeeUser.isIDTaken()
+        EmployeeUser.isIDTaken(employeeId, employees)
 
         return employeeId;
     }
