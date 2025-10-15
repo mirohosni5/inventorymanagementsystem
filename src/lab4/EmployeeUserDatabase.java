@@ -13,7 +13,6 @@ public class EmployeeUserDatabase {
     public EmployeeUser createRecordFrom(String line){
         String[] data=line.split("," );
         if (data.length!=5){
-            System.out.println("I");
             return null;
         }
         String employeeid=data[0].trim();
