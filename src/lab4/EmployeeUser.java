@@ -65,7 +65,8 @@ public class EmployeeUser {
 
     public String getSearchKey(List<EmployeeUser> emp) {
 if (employeeId==null||employeeId.trim().isEmpty()){
-    System.out.println("t");
+    System.out.println("there has to be an id");
+    
 }
         for (EmployeeUser e:emp){
             if (e.getEmployeeId()!=null&&e.getEmployeeId().equalsIgnoreCase(employeeId)){
