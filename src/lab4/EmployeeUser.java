@@ -66,7 +66,8 @@ public class EmployeeUser {
     public String getSearchKey(List<EmployeeUser> emp) {
         for (EmployeeUser e:emp){
             if (e.getEmployeeId()!=null||e.getEmployeeId().equalsIgnoreCase(employeeId)){
-                System.out.println("");
+                System.out.println("you canot enter same id twice");
+                
             }
         }
 
