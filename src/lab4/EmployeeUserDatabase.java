@@ -34,7 +34,8 @@ return new EmployeeUser(employeeid,name,email,address,phonenumber);
         BufferedReader b=null;
         //let's see if file exists first
         try{
-             b=
+             b=new BufferedReader(new FileReader(filename));
+             
         }
 
     }
