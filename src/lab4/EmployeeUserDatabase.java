@@ -12,7 +12,11 @@ public class EmployeeUserDatabase {
     }
     public EmployeeUser createRecordFrom(String line){
         String[] tokens=line.split("[,\\s]+" );
-        if (data.length)
+        if (data.length!=5){
+            System.out.println("Invalid data format");
+            return null;
+        }
+        }
 
 
 
