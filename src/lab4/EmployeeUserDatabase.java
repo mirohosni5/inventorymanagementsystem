@@ -41,8 +41,16 @@ return new EmployeeUser(employeeid,name,email,address,phonenumber);
             System.out.println("File not found");
             return;
         }
-//lets read the file without usin
+//lets read the file
         String line;
+        try{
+            while ((line=b.readLine())!=null){
+                EmployeeUser emp=createRecordFrom(line);
+                if (emp!=null){
+                    records.add(emp);
+                }
+            }
+        }
 
 
     }
