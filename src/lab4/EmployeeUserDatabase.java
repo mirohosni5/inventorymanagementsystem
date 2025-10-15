@@ -12,7 +12,6 @@ public class EmployeeUserDatabase {
     }
     public EmployeeUser createRecordFrom(String line){
         String[] data=line.split("," );
-        data.length(5);
 
         
 
