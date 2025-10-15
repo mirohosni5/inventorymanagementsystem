@@ -67,7 +67,7 @@ public class EmployeeUser {
         for (EmployeeUser e:emp){
             if (e.getEmployeeId()!=null||e.getEmployeeId().equalsIgnoreCase(employeeId)){
                 System.out.println("you canot enter same id twice");
-                
+                return null;
             }
         }
 
