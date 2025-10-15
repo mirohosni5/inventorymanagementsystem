@@ -32,8 +32,8 @@ return new EmployeeUser(employeeid,name,email,address,phonenumber);
     public void readFromFile(){
         records.clear();
         BufferedReader br=null;
-        //lets see if file exits first
-        
+        //lets see if file exists first
+
     }
     }
    
