@@ -42,6 +42,7 @@ return new EmployeeUser(employeeid,name,email,address,phonenumber);
             return;
         }
 //lets read the file without using try and catch
+        String line;
         
 
     }
