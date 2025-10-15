@@ -11,7 +11,7 @@ public class EmployeeUserDatabase {
        this.records=new ArrayList<>();
     }
     public EmployeeUser createRecordFrom(String line){
-        String[] tokens=line.split("[,\\s]+" );
+        String[] data=line.split("[,\\s]+" );
         if (data.length!=5){
             System.out.println("Invalid data format");
             return null;
