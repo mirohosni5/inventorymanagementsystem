@@ -17,8 +17,9 @@ public class EmployeeUserDatabase {
             return null;
         }
         String employeeid=data[0].trim();
-        String email=data[1].trim();
-        String =data[2].trim();
+        String name=data[1].trim();
+        String email=data[2].trim();
+        
 
         }
 
