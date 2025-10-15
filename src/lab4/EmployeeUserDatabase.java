@@ -11,8 +11,8 @@ public class EmployeeUserDatabase {
        this.records=new ArrayList<>();
     }
     public EmployeeUser createRecordFrom(String line){
-        String[] tokens=line.split( );
-       
+        String[] tokens=line.split("[]" );
+
     }
     public void readFromFile(){
         try{
