@@ -8,7 +8,7 @@ public class EmployeeUserDatabase {
     //constructor
     public EmployeeUserDatabase(String filename){
         this.filename=filename;
-        records=new ArrayList<>();
+       this.records=new ArrayList<>();
     }
 
 
