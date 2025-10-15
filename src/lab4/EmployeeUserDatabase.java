@@ -45,7 +45,7 @@ public class EmployeeUserDatabase {
     public EmployeeUser createRecordFrom(String line){
         String[] data=line.split("," );
 
-        assert  data.length==5; //assert make sure the data will stay as five and it will give an error if it is more
+        assert  data.length==5; //assert make sure the data will stay as five, and it will give an error if it is more
 
         String employeeId=data[0].trim();
         String name=data[1].trim();
