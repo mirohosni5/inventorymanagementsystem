@@ -31,10 +31,10 @@ return new EmployeeUser(employeeid,name,email,address,phonenumber);
 
     public void readFromFile(){
         records.clear();
-        BufferedReader br=null;
+        BufferedReader b=null;
         //let's see if file exists first
         try{
-            
+
         }
 
     }
