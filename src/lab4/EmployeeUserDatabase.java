@@ -62,7 +62,7 @@ return new EmployeeUser(employeeid,name,email,address,phonenumber);
          if (contains(key)){
              for (EmployeeUser emp:records){
                  if (emp.getEmployeeId().equalsIgnoreCase(key)){
-                     return e;
+                     return emp;
                  }
              }
          }
