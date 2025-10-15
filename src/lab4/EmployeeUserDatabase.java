@@ -37,7 +37,7 @@ return new EmployeeUser(employeeid,name,email,address,phonenumber);
             System.out.println("cannot find file");
             return;
         }
-//lets read the file
+//let's read the file
         String line;
         try{
             while ((line=b.readLine())!=null){
@@ -59,7 +59,7 @@ return new EmployeeUser(employeeid,name,email,address,phonenumber);
         return EmployeeUser.isIDTaken(key,records);
     }
     public EmployeeUser getRecord(String key){
-        
+
     }
 
 
