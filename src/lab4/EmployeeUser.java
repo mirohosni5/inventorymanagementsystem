@@ -64,7 +64,7 @@ public class EmployeeUser {
     }
 
     public String getSearchKey(List<EmployeeUser> emp) {
-        if ((employeeId == null) || employeeId.isEmpty()){ //checking if the id is empty or null
+        if ((employeeId == null) || (employeeId.isEmpty()){ //checking if the id is empty or null
             System.out.println("there has to be an id");
             return null;
 }
