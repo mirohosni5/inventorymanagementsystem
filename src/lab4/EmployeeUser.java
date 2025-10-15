@@ -59,7 +59,7 @@ public class EmployeeUser {
     }
 
     //methods
-    public  boolean contains(string k)
+    public  boolean contains(string key)
     public String lineRepresentation() {
         return String.join(",",employeeId,name,email,address,phoneNumber);
     }
