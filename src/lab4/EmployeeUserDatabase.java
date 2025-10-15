@@ -33,7 +33,7 @@ return new EmployeeUser(employeeid,name,email,address,phonenumber);
         records.clear();
         BufferedReader br=null;
         //let's see if file exists first
-        try
+        try{
 
     }
     }
