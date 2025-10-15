@@ -13,7 +13,7 @@ public class EmployeeUserDatabase {
     public EmployeeUser createRecordFrom(String line){
         String[] data=line.split("," );
 
-      assert  data.length==5; //this make sure 
+      assert  data.length==5; //this make sure the data will stay as five
 
 
         String employeeid=data[0].trim();
