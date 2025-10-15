@@ -60,7 +60,13 @@ public class EmployeeUser {
 
     //methods
     public  boolean contains(String key,List<EmployeeUser> emp){
-        
+        for (EmployeeUser e:emp){
+            if (e.getEmployeeId().equalsIgnoreCase(key)){
+                return true;
+            }
+        }
+        return false;
+
 
     }
     public String lineRepresentation() {
