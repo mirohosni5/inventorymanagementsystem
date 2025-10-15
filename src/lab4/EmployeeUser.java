@@ -74,17 +74,7 @@ public class EmployeeUser {
     }
 
     public String getSearchKey(List<EmployeeUser> emp) {
-        if ((employeeId == null) || (employeeId.isEmpty())){ //checking if the id is empty or null
-            System.out.println("there has to be an id");
-            return null;
-}
-        for (EmployeeUser e:emp){
-            if (e.getEmployeeId()!=null&&e.getEmployeeId().equalsIgnoreCase(employeeId)){ //if it is not null and is the same id in the list we give a warning
-                System.out.println("you can not enter same id twice");
-                return null;
-            }
-        }
-
+       
         return employeeId;
     }
 }
