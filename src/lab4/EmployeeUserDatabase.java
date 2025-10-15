@@ -12,7 +12,8 @@ public class EmployeeUserDatabase {
     }
     public void readFromFile(){
         try{
-            Buffer
+            BufferedReader br=new BufferedReader(new FileReader(filename));
+            
         }
     }
 
