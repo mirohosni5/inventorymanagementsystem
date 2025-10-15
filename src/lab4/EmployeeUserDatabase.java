@@ -59,7 +59,7 @@ return new EmployeeUser(employeeid,name,email,address,phonenumber);
         return EmployeeUser.isIDTaken(key,records);
     }
     public EmployeeUser getRecord(String key){
-         if 
+         if ()
     }
 
 
