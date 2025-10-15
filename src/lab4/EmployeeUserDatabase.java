@@ -67,7 +67,7 @@ return new EmployeeUser(employeeid,name,email,address,phonenumber);
              }
          }
          else{
-             System.out.println("Employee not found");
+             System.out.println("");
              return null;
          }
 
