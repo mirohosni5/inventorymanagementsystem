@@ -10,19 +10,7 @@ public class EmployeeUserDatabase {
         this.filename=filename;
        this.records=new ArrayList<>();
     }
-    public EmployeeUser createRecordFrom(String line){
-        String[] data=line.split("," );
-
-      assert  data.length==5; //assert make sure the data will stay as five and it will give an error if it is more
-
-        String employeeid=data[0].trim();
-        String name=data[1].trim();
-        String email=data[2].trim();
-        String address=data[3].trim();
-        String phonenumber=data[4].trim();
-return new EmployeeUser(employeeid,name,email,address,phonenumber);
-        }
-
+    
 
     public void readFromFile(){
         records.clear();
