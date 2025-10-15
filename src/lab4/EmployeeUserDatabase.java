@@ -60,7 +60,7 @@ return new EmployeeUser(employeeid,name,email,address,phonenumber);
     }
     public EmployeeUser getRecord(String key){
          if (!contains(key)){
-             System.out.println()
+             System.out.println("id doesnt exist")
          }
     }
 
