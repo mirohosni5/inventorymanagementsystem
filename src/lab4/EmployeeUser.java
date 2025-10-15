@@ -74,7 +74,7 @@ public class EmployeeUser {
     }
 
     public String getSearchKey() {
-        EmployeeUser.contain(key, records);
+        EmployeeUser.(key, records);
         return employeeId;
     }
 }
