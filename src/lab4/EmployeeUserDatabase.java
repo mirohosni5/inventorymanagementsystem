@@ -24,7 +24,7 @@ public class EmployeeUserDatabase {
 return new EmployeeUser(employeeid,name,email,address,phonenumber);
         }
 
-        
+
     public void readFromFile(){
         records.clear();
         BufferedReader b=null;
@@ -34,7 +34,7 @@ return new EmployeeUser(employeeid,name,email,address,phonenumber);
 
         }
         catch (FileNotFoundException e){
-            System.out.println("File not found");
+            System.out.println("F");
             return;
         }
 //lets read the file
