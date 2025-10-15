@@ -27,7 +27,7 @@ return new EmployeeUser(employeeid,name,email,address,phonenumber);
 
     public void readFromFile(){
         records.clear();
-        BufferedReader b=null;
+        BufferedReader b;
         //let's see if file exists first
         try{
              b=new BufferedReader(new FileReader(filename));
@@ -49,7 +49,7 @@ return new EmployeeUser(employeeid,name,email,address,phonenumber);
         }
         catch (IOException e){
             System.out.println("Error reading file");
-            
+
         }
 
 
