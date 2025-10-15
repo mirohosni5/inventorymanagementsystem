@@ -24,11 +24,7 @@ public class EmployeeUserDatabase {
 return new EmployeeUser(employeeid,name,email,address,phonenumber);
         }
 
-
-
-
-
-
+        
     public void readFromFile(){
         records.clear();
         BufferedReader b=null;
