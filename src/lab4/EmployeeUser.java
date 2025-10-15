@@ -59,7 +59,7 @@ public class EmployeeUser {
     }
 
     //methods
-    public static   boolean contain(String key,List<EmployeeUser> emp){
+    public static   boolean isIDTaken(String key,List<EmployeeUser> emp){
         for (EmployeeUser e:emp){
             if (e.getEmployeeId().equalsIgnoreCase(key)){
                 return true;
