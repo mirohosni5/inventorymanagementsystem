@@ -10,7 +10,7 @@ public class EmployeeUserDatabase {
         this.filename=filename;
        this.records=new ArrayList<>();
     }
-    public void readFromFi
+    public void readFromFile()
 
 
     
