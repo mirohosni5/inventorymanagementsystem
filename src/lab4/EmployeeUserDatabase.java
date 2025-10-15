@@ -34,7 +34,7 @@ return new EmployeeUser(employeeid,name,email,address,phonenumber);
 
         }
         catch (FileNotFoundException e){
-            System.out.println("F");
+            System.out.println("cannot find file");
             return;
         }
 //lets read the file
