@@ -78,7 +78,7 @@ public class EmployeeUser {
            System.out.println("Employee ID exists");
            return null;
        }
-
+else{
         return employeeId;
     }
 }
