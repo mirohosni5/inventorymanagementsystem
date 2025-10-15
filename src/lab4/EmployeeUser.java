@@ -65,7 +65,7 @@ public class EmployeeUser {
 
     public String getSearchKey(List<EmployeeUser> emp) {
         for (EmployeeUser e:emp){
-            if (e.getEmployeeId()!=null||e.getEmployeeId())
+            if (e.getEmployeeId()!=null||e.getEmployeeId().equalsIgnoreCase())
         }
 
         return employeeId;
