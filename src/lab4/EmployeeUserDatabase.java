@@ -59,12 +59,7 @@ return new EmployeeUser(employeeid,name,email,address,phonenumber);
         return EmployeeUser.isIDTaken(key,records);
     }
     public EmployeeUser getRecord(String key){
-         if (!contains(key)){
-             System.out.println("id doesnt exist");
-             return null;
-         }
          
-         }
     }
 
 
