@@ -10,11 +10,12 @@ public class EmployeeUserDatabase {
         this.filename=filename;
        this.records=new ArrayList<>();
     }
+    public 
     public void readFromFile(){
         try{
             BufferedReader br=new BufferedReader(new FileReader(filename));
             String line;
-            
+
         }
     }
 
