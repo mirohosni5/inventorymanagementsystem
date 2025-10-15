@@ -59,7 +59,7 @@ public class EmployeeUser {
     }
 
     //methods
-    public  boolean contains(Stringtring key,List<EmployeeUser> emp){
+    public  boolean contains(String key,List<EmployeeUser> emp){
         if ((employeeId == null) || (employeeId.isEmpty())){ //checking if the id is empty or null
             System.out.println("there has to be an id");
             return null;
