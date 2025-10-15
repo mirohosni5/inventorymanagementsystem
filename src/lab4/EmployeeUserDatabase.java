@@ -37,7 +37,7 @@ return new EmployeeUser(employeeid,name,email,address,phonenumber);
             System.out.println("cannot find file");
             return;
         }
-//let's read the file
+//le t's read the file
         String line;
         try{
             while ((line=b.readLine())!=null){
