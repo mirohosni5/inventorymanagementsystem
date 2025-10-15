@@ -57,7 +57,7 @@ return new EmployeeUser(employeeid,name,email,address,phonenumber);
     }
     public boolean contains(String key){
         for (EmployeeUser emp:records){
-            if (emp.getEmployeeId().equalsIgnoreCase(key)){
+            if (em){
                 return true;
             }
         }
