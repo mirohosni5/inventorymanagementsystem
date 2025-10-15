@@ -53,7 +53,7 @@ public class EmployeeUserDatabase {
         String address=data[3].trim();
         String phonenumber=data[4].trim();
         EmployeeUser c= new EmployeeUser(employeeid,name,email,address,phonenumber);
-        return e;
+        return c;
     }
 
     public boolean contains(String key){
