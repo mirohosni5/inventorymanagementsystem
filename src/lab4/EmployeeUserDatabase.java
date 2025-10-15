@@ -13,6 +13,7 @@ public class EmployeeUserDatabase {
     public void readFromFile(){
         try{
             BufferedReader br=new BufferedReader(new FileReader(filename));
+            String line;
             
         }
     }
