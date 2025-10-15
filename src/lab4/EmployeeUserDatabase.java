@@ -19,7 +19,8 @@ public class EmployeeUserDatabase {
         String employeeid=data[0].trim();
         String name=data[1].trim();
         String email=data[2].trim();
-        
+        String address=data[3].trim();
+        String phonenumber=data[4].trim();
 
         }
 
