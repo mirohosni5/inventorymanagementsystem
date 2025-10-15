@@ -33,7 +33,12 @@ return new EmployeeUser(employeeid,name,email,address,phonenumber);
         try{
             BufferedReader br=new BufferedReader(new FileReader(filename));
             String line;
-            
+            while ((line=br.readLine())!=null){
+                EmployeeUser emp=createRecordFrom(line);
+                if (emp!=null){
+                    records.add(emp);
+                }
+            }
 
         }
     }
