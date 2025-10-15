@@ -59,6 +59,7 @@ public class EmployeeUser {
     }
 
     //methods
+    
     public String lineRepresentation() {
         return String.join(",",employeeId,name,email,address,phoneNumber);
     }
