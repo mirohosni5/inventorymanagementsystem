@@ -59,7 +59,7 @@ public class EmployeeUser {
     }
 
     //methods
-    public  boolean contai
+    public  boolean contain
     public String lineRepresentation() {
         return String.join(",",employeeId,name,email,address,phoneNumber);
     }
