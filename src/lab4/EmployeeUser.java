@@ -57,16 +57,14 @@ public class EmployeeUser {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
-    
-}
-return false;
-}
+
     //methods
     public String lineRepresentation() {
         return String.join(",",employeeId,name,email,address,phoneNumber);
     }
 
     public String getSearchKey() {
+        
         return employeeId;
     }
 }
