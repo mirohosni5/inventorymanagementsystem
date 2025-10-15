@@ -16,9 +16,9 @@ public class EmployeeUserDatabase {
             System.out.println("Invalid data format");
             return null;
         }
-        String em=data[0].trim();
+        String employeeid=data[0].trim();
         String email=data[1].trim();
-        String employeeId=data[2].trim();
+        String =data[2].trim();
 
         }
 
