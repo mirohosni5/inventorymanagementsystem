@@ -59,7 +59,7 @@ public class EmployeeUser {
     }
 
     //methods
-    public static 
+    public static boolean 
     public String lineRepresentation() {
         return String.join(",",employeeId,name,email,address,phoneNumber);
     }
