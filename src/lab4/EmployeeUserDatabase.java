@@ -10,7 +10,13 @@ public class EmployeeUserDatabase {
         this.filename=filename;
        this.records=new ArrayList<>();
     }
-    public 
+    public EmployeeUser createRecordFrom(String line){
+        String[] tokens=line.split(",");
+        String name=tokens[0];
+        String email=tokens[1];
+        String ssn=tokens[2];
+        return new EmployeeUser(name,email,ssn);
+    }
     public void readFromFile(){
         try{
             BufferedReader br=new BufferedReader(new FileReader(filename));
