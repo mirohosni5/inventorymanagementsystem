@@ -49,6 +49,7 @@ return new EmployeeUser(employeeid,name,email,address,phonenumber);
         }
         catch (IOException e){
             System.out.println("Error reading file");
+            return;
         }
 
 
