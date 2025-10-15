@@ -64,7 +64,9 @@ public class EmployeeUser {
     }
 
     public String getSearchKey(List<EmployeeUser> emp) {
-if (employeeId==null||employeeId.trim())
+if (employeeId==null||employeeId.trim().isEmpty()){
+    
+}
         for (EmployeeUser e:emp){
             if (e.getEmployeeId()!=null&&e.getEmployeeId().equalsIgnoreCase(employeeId)){
                 System.out.println("you can not enter same id twice");
