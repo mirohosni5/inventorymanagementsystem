@@ -52,8 +52,7 @@ public class EmployeeUserDatabase {
         String email=data[2].trim();
         String address=data[3].trim();
         String phonenumber=data[4].trim();
-        EmployeeUser c= new EmployeeUser(employeeId,name,email,address,phonenumber);
-        return c;
+        return new EmployeeUser(employeeId,name,email,address,phonenumber);
     }
 
     public boolean contains(String key){
