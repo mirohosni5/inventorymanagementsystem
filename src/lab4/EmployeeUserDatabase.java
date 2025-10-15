@@ -60,17 +60,13 @@ return new EmployeeUser(employeeid,name,email,address,phonenumber);
     }
     public EmployeeUser getRecord(String key){
          if (contains(key)){
-             for (EmployeeUser e:records){
+             for (EmployeeUser em:records){
                  if (e.getEmployeeId().equalsIgnoreCase(key)){
                      return e;
                  }
              }
          }
-         else{
-             System.out.println("Employee ID not found");
-             return null;
-         }
-        return null
+
     }
     }
 
