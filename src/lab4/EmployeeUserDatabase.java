@@ -4,7 +4,7 @@ import java.io.*;
 
 public class EmployeeUserDatabase {
     private ArrayList<EmployeeUser> records;
-    private final String filename;
+    private f String filename;
     //constructor
     public EmployeeUserDatabase(String filename){
         this.filename=filename;
