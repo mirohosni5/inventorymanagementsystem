@@ -56,12 +56,7 @@ return new EmployeeUser(employeeid,name,email,address,phonenumber);
 
     }
     public boolean contains(String key){
-        for (EmployeeUser emp:records){
-            if (EmployeeUser.isIDTaken(employeeId, employee){
-                return true;
-            }
-        }
-        return false;
+        
     }
 
 
