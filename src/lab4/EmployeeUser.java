@@ -74,7 +74,6 @@ public class EmployeeUser {
     }
 
     public String getSearchKey() {
-        
 
         return employeeId;
     }
