@@ -30,13 +30,7 @@ return new EmployeeUser(employeeid,name,email,address,phonenumber);
 
 
     public void readFromFile(){
-        try{
-            BufferedReader br=new BufferedReader(new FileReader(filename));
-            String line;
-            
-            }
-
-        }
+        
     }
     }
    
