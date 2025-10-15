@@ -6,7 +6,9 @@ public class EmployeeUserDatabase {
     private ArrayList<EmployeeUser> records;
     private String filename;
     //constructor
-    public EmployeeUserDatabase(String filename)
+    public EmployeeUserDatabase(String filename){
+        
+    }
 
 
     
