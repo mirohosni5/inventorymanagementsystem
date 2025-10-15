@@ -57,7 +57,7 @@ return new EmployeeUser(employeeid,name,email,address,phonenumber);
     public boolean contains(String key){
         return EmployeeUser.isIDTaken(key,records);
     }
-    public EmployeeUser getRecord(String key){//searching for the record usi
+    public EmployeeUser getRecord(String key){//searching for the record using the contain method
          if (contains(key)){
              for (EmployeeUser emp:records){
                  if (emp.getEmployeeId().equalsIgnoreCase(key)){
