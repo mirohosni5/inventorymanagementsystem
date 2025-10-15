@@ -11,7 +11,9 @@ public class EmployeeUserDatabase {
        this.records=new ArrayList<>();
     }
     public void readFromFile(){
-        
+        try{
+            
+        }
     }
 
 
