@@ -3,5 +3,6 @@ import java.util.*;
 import java.io.*;
 
 public class EmployeeUserDatabase {
-    private ArrayList<EmployeeUser>
+    private ArrayList<EmployeeUser> records;
+    //make sor
 }
