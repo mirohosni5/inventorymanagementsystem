@@ -74,7 +74,9 @@ public class EmployeeUser {
     }
 
     public String getSearchKey(List<EmployeeUser>employees) {
-       if ()EmployeeUser.isIDTaken(employeeId, employees);
+       if (EmployeeUser.isIDTaken(employeeId, employees)){
+           System.out.println("Employee ID already exists");
+       })EmployeeUser.isIDTaken(employeeId, employees);
 
         return employeeId;
     }
