@@ -60,8 +60,8 @@ return new EmployeeUser(employeeid,name,email,address,phonenumber);
     }
     public EmployeeUser getRecord(String key){
          if (contains(key)){
-             for (EmployeeUser em:records){
-                 if (e.getEmployeeId().equalsIgnoreCase(key)){
+             for (EmployeeUser emp:records){
+                 if (emp.getEmployeeId().equalsIgnoreCase(key)){
                      return e;
                  }
              }
