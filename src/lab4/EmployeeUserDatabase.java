@@ -11,7 +11,7 @@ public class EmployeeUserDatabase {
        this.records=new ArrayList<>();
     }
     public EmployeeUser createRecordFrom(String line){
-        String[] tokens=line.split(//sepereate with spaces or comma// );
+        String[] tokens=line.split(//sepereate with spaces or comma  );
         String name=tokens[0];
         String email=tokens[1];
         String ssn=tokens[2];
