@@ -47,12 +47,12 @@ public class EmployeeUserDatabase {
 
         assert  data.length==5; //assert make sure the data will stay as five and it will give an error if it is more
 
-        String employeeid=data[0].trim();
+        String employeeId=data[0].trim();
         String name=data[1].trim();
         String email=data[2].trim();
         String address=data[3].trim();
         String phonenumber=data[4].trim();
-        EmployeeUser c= new EmployeeUser(employeeid,name,email,address,phonenumber);
+        EmployeeUser c= new EmployeeUser(employeeId,name,email,address,phonenumber);
         return c;
     }
 
