@@ -66,7 +66,10 @@ return new EmployeeUser(employeeid,name,email,address,phonenumber);
                  }
              }
          }
-         e
+         else{
+             System.out.println("Employee not found");
+             return null;
+         }
 
     }
     }
