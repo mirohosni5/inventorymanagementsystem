@@ -1,4 +1,4 @@
 package lab4;
 
-abstract class databases {
+public abstract class databases {
 }
