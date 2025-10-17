@@ -39,6 +39,8 @@ public abstract class databases<T> {
             br.close();
         }
     }
+    catch (IOException e){
+        System.out.println("Error closing file");
     }
 
 
