@@ -6,8 +6,9 @@ public abstract class IDtkenRecord  implements recordInterfaces{
                for(recordInterfaces s:list){
                    if(s.getSearchKey().equalsIgnoreCase(key)){
                        return true;}
-                   
+
                    }
                }
+               return 
     }
 }
