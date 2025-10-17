@@ -52,7 +52,7 @@ public abstract class databases<T> {
     }
     public void savetoFile(){
        try{  BufferedWriter bw= new BufferedWriter(new FileWriter(filename));
-           for(T record:records)
+           for(T record:records){
 
     }
 
