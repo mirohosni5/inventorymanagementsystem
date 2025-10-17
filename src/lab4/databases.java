@@ -10,7 +10,7 @@ public abstract class databases<T> {
     }
     public void readFromFile(){
         records.clear(); //to clear anything inside record first
-        try
+        try{
     }
 
 }
