@@ -61,7 +61,10 @@ public abstract class databases<T extends IDtkenRecord> {
             return null;
         }
         for(T recd: records){
-            
+            if(recd.getSearchKey().equalsIgnoreCase(key)){
+                return recd;
+            }
+        }
         }
     }
 
