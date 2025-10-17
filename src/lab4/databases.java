@@ -10,7 +10,9 @@ public abstract class databases<T extends IDtkenRecord> {
     }
     public void saveToFile(){
         try(PrintWriter pw=new PrintWriter(new FileWriter(filename))){
-            for(T record:)
+            for(T record:records){
+                
+            }
         }
     }
 
