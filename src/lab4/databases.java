@@ -44,11 +44,11 @@ public abstract class databases<T> {
         System.out.println("Error closing file");
     }
     //lets return the lists
-public ArrayList<T> returnAllRecords(){
-        return records;
-        }
 
 }
+    public ArrayList<T> returnAllRecords(){
+        return records;
+    }
 
 
 
