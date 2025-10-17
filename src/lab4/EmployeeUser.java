@@ -68,7 +68,7 @@ public class EmployeeUser {
         this.phoneNumber = phoneNumber;
     }
 
-    //methods checks for duplicates in list 
+    //methods checks for duplicates in list  might use later
     public static   boolean isIDTaken(String key,List<EmployeeUser> emp){
         for (EmployeeUser e:emp){
             if (e.getEmployeeId().equalsIgnoreCase(key)){
