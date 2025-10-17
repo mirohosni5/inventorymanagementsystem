@@ -79,7 +79,7 @@ public abstract class databases<T extends IDtkenRecord> {
         System.out.println("record added"+ record.getSearchKey());
         saveToFile();
         }
-        public 
+        public void deleteRec
 
     }
 
