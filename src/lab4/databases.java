@@ -13,7 +13,7 @@ public abstract class databases<T extends IDtkenRecord> {
             for(T record:records){
                 pw.println(record.lineRepresentation());
             }
-            
+            System.out.println();
         }
     }
 
