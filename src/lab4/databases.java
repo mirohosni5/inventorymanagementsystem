@@ -9,7 +9,7 @@ public abstract class databases<T extends IDtkenRecord> {
         this.filename=filename;
     }
     public void saveToFile(){
-        try{
+        try()
     }
 
     public void readFromFile(){
