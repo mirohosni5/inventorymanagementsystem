@@ -53,7 +53,7 @@ public abstract class databases<T extends IDtkenRecord> {
         return records;
     }
     public boolean contains(String key){
-        return IDtkenRecord.isIDtaken()
+        return IDtkenRecord.isIDtaken(key)
     }
     public T getRecord(String key){
         if(!contains(key)){
