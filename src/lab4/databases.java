@@ -16,7 +16,7 @@ public abstract class databases<T> {
     }
         catch (FileNotFoundException e){
             System.out.println("File not found");
-            return; //sto
+            return; //stop if file not found
         }
         }
 
