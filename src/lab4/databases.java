@@ -36,7 +36,7 @@ public abstract class databases<T> {
     }
     try{
         if(br!=null){
-            
+            br.close();
         }
     }
     }
