@@ -46,7 +46,6 @@ public abstract class databases<T> {
 
 
 }
-public abstract createRecord(String line);
 
 
 
