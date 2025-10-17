@@ -61,11 +61,12 @@ public abstract class databases<T> {
                         if(((Product) record).getProductId().equalsIgnoreCase(key)){
                                 return true;
                         }
-                        
+
                     }
                 }
 
             }
+            return false;
     }
 
     public void savetoFile(){
