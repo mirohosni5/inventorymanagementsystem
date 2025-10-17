@@ -12,7 +12,8 @@ public abstract class IDtkenRecord  implements recordInterfaces{
                }
 @Override
     public abstract String lineRepresentation();
-    
+    @Override
+    public abstract String getSearchKey();
     }
 
 
