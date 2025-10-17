@@ -2,7 +2,7 @@ package lab4;
 import java.io.*;
 import java.util.*;
 
-public abstract class databases<T extends > {
+public abstract class databases<T extends IDtkenRecord> {
     public ArrayList<T> records= new ArrayList<>();
     public String filename;
     public databases(String filename){
