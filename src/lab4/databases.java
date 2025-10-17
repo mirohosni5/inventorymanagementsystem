@@ -80,7 +80,7 @@ public abstract class databases<T extends IDtkenRecord> {
         saveToFile();
         }
         public void deleteRecord(String key){
-        if(!contains(key))
+        if(!contains(key)){
         }
 
     }
