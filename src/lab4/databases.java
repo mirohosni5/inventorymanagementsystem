@@ -8,6 +8,7 @@ public abstract class databases<T extends IDtkenRecord> {
     public databases(String filename){
         this.filename=filename;
     }
+    
 
     public void readFromFile(){
         records.clear();//to clear anything inside record first
@@ -53,7 +54,7 @@ public abstract class databases<T extends IDtkenRecord> {
 
         return records;
     }
-      
+
     public boolean contains(String key){
         return IDtkenRecord.isIDtaken(key,records);
     }
