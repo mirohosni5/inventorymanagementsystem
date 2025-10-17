@@ -4,7 +4,7 @@ import java.util.*;
   any other class that has search key and line representation use the interface class 3adi
      */
 public abstract class IDtkenRecord  implements recordInterfaces{
-    //to check for same ids
+    //to check for same ids i
     public static boolean isIDtaken(String key, List<recordInterfaces>list){
                for(recordInterfaces s:list){
                    if(s.getSearchKey().equalsIgnoreCase(key)){
