@@ -47,10 +47,12 @@ public class EmployeeUser {
 
     //setters
     public void setEmployeeId(String employeeId) {
+
         this.employeeId = employeeId;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
