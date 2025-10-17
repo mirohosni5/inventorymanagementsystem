@@ -1,4 +1,4 @@
 package lab4;
 
-public class IDtkenRecord {
+public abstract class IDtkenRecord {
 }
