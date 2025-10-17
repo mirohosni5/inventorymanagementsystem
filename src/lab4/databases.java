@@ -60,7 +60,9 @@ public abstract class databases<T extends IDtkenRecord> {
 
             return null;
         }
-        for(T recd:)
+        for(T recd: records){
+            
+        }
     }
 
     }
