@@ -1,7 +1,7 @@
 package lab4;
 import java.io.*;
 import java.util.*;
-//here i used generic so it would take any
+//here i used generic so it would take any object type 
 public abstract class databases<T extends IDtkenRecord> {
     public ArrayList<T> records= new ArrayList<>();
     public String filename;
