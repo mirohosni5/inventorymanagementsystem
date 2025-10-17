@@ -88,6 +88,7 @@ public abstract class databases<T extends IDtkenRecord> {
             if(itemDeleted!=null){
             records.remove(itemDeleted);}
         }
+        saveToFile();
         }
 
     }
