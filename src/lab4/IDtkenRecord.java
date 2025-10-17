@@ -8,7 +8,8 @@ public abstract class IDtkenRecord  implements recordInterfaces{
                        return true;}
 
                    }
+               
                }
-               return false;
+
     }
 
