@@ -49,9 +49,10 @@ public abstract class databases<T> {
 }
 //lets return the lists
     public ArrayList<T> returnAllRecords(){
+
         return records;
     }
-    
+
     public boolean contains(String key){
             for( T record:records){
                 if ( record instanceof EmployeeUser){
