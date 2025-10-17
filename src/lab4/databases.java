@@ -52,7 +52,7 @@ public abstract class databases<T extends IDtkenRecord> {
 
         return records;
     }
-    public boolean contains
+    public boolean contains(String key))
     public T getRecord(String key){
         if(!contains(key)){
 
