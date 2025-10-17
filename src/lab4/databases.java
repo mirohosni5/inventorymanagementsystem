@@ -51,7 +51,7 @@ public abstract class databases<T> {
     public ArrayList<T> returnAllRecords(){
         return records;
     }
-    public boolean contains()
+    public boolean contains(String key){}
     public void savetoFile(){
        try{  BufferedWriter bw= new BufferedWriter(new FileWriter(filename));
            for(T record:records){
