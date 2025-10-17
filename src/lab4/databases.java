@@ -26,6 +26,7 @@ public abstract class databases<T> {
         while ((line=br.readLine())!=null){
             T record= createrecord(line);
             if (record!=null){
+                records.add(record);
                 
             }
         }
