@@ -54,7 +54,8 @@ public abstract class databases<T> {
        try{  BufferedWriter bw= new BufferedWriter(new FileWriter(filename));
            for(T record:records){
                if (record instanceof EmployeeUser){
-                   bw
+                   bw.write(((EmployeeUser) record).lineRepresentation());
+                   
 
                }
            }
