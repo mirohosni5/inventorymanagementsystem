@@ -3,5 +3,6 @@ import java.io.*;
 import java.util.*;
 
 public abstract class databases<T> {
-    public ArrayList<T> records= new;
+    public ArrayList<T> records= new ArrayList<>();
+    
 }
