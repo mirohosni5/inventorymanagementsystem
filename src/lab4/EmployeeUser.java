@@ -84,8 +84,6 @@ else{
     }
 }}
 
-//create main class
-
 
 
 
