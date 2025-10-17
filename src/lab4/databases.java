@@ -35,7 +35,7 @@ public abstract class databases<T> {
     catch (IOException e){
         System.out.println("Error reading file");
     }
-    //
+    //did the try and catch in closing fo
     try{
         if(br!=null){
             br.close();
