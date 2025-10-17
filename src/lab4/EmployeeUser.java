@@ -16,6 +16,7 @@ public class EmployeeUser {
         this.address = address;
         this.phoneNumber = phoneNumber;
     }
+    
 
     //getters
     public String getEmployeeId() {
