@@ -5,7 +5,7 @@ public abstract class IDtkenRecord  implements recordInterfaces{
     public static boolean isIDtaken(String key, List<recordInterfaces>list){
                for(recordInterfaces s:list){
                    if(s.getSearchKey().equalsIgnoreCase(key)){
-                       return 
+                       return true;
                    }
                }
     }
