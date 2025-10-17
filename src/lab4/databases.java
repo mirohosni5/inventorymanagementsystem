@@ -35,7 +35,9 @@ public abstract class databases<T> {
         System.out.println("Error reading file");
     }
     try{
-        if(br!=null)
+        if(br!=null){
+            
+        }
     }
     }
 
