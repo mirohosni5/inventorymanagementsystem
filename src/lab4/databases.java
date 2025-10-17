@@ -52,9 +52,10 @@ public abstract class databases<T extends IDtkenRecord> {
 
         return records;
     }
+    public 
     public T getRecord(String key){
         if(!contains(key)){
-            
+
             return null;
         })
     }
