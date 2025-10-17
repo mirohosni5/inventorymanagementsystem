@@ -88,7 +88,7 @@ public class EmployeeUser implements recordInterfaces {
 
     @Override
     public String getSearchKey() {
-        return ;
+        return employeeId;
     }
 
     @override
