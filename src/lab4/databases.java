@@ -52,7 +52,9 @@ public abstract class databases<T> {
         return records;
     }
     public boolean contains(String key){
-            for( T record:records)
+            for( T record:records){
+                
+            }
     }
 
     public void savetoFile(){
