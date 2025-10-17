@@ -63,6 +63,9 @@ public abstract class databases<T> {
            }
            bw.close();
            }
+       catch (IOException e){
+           System.out.println("Error writing to file");
+       }
 
     }
 
