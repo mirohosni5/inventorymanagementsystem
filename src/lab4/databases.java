@@ -45,5 +45,5 @@ public abstract class databases<T> {
 
 
 }
-public abstract createRecord
+public abstract createRecord(String line)
 }
