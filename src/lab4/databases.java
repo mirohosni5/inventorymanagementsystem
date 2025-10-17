@@ -3,7 +3,7 @@ import java.io.*;
 import java.util.*;
 
 public abstract class databases<T extends IDtkenRecord> {
-    public ArrayList<T> records= new ArrayList<>();
+    public List<recordInterfaces> records= new ArrayList<>();
     public String filename;
     public databases(String filename){
         this.filename=filename;
