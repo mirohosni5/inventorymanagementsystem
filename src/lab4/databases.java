@@ -71,7 +71,9 @@ public abstract class databases<T extends IDtkenRecord> {
             return;
 
         }
-        if(contains(record.getSearchKey())
+        if(contains(record.getSearchKey())){
+            
+        }
         }
 
     }
