@@ -57,13 +57,7 @@ public abstract class databases<T> {
            
 
     public void savetoFile(){
-      
-           }
-           bw.close();
-           }
-       catch (IOException e){
-           System.out.println("Error writing to file");
-       }
+
 
     }
 
