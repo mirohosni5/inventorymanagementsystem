@@ -9,7 +9,8 @@ public abstract class databases<T> {
         this.filename=filename;
     }
     public void readFromFile(){
-        records.clear(); //to clear anything inside record first
+        records.clear();
+        //to clear anything inside record first
         try{ br=new BufferedReader(new FileReader(filename));
 
     }
