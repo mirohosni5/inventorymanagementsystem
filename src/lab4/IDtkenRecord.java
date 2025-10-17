@@ -4,7 +4,7 @@ import java.util.*;
   just inherit this class and it will do the interface too in the child classes
      */
 public abstract class IDtkenRecord  implements recordInterfaces{ /*this means list of any clas  that implements the parent class will work
-    to check for same ids
+    to check for same ids*/
     public static boolean isIDtaken(String key, List<?  extends recordInterfaces>list){ iwill use genric here for it to work with any type of object
 
                for(recordInterfaces s:list){
