@@ -53,7 +53,7 @@ public abstract class databases<T> {
     }
     public boolean contains(String key){
             for( T record:records){
-                if ( record instanceof EmployeeUse
+                if ( record instanceof EmployeeUser
 
             }
     }
