@@ -53,7 +53,4 @@ public abstract class databases<T> {
         return records;
     }
 
-    public boolean contains(String key) {
-
-
-    }\}
+    }
