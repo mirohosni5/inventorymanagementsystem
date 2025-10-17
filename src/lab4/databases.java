@@ -23,7 +23,9 @@ public abstract class databases<T> {
         //reading the file
     try{
         String line;
-        while ((line=br.readLine())!=null)
+        while ((line=br.readLine())!=null){
+            
+        }
     }
 
 
