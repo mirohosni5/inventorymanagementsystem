@@ -59,7 +59,7 @@ public abstract class databases<T> {
                         return true;
                     }
                     else if (record instanceof Product){
-                        if(.getProductId().equalsIgnoreCase(key)){
+                        if(p.getProductId().equalsIgnoreCase(key)){
                             return true;
                         }
 
