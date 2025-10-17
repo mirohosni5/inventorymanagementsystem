@@ -19,7 +19,7 @@ public abstract class databases<T> {
             System.out.println("File not found");
             return; //stop if file not found
         }
-        
+
         //reading the file
     try{
         String line;
@@ -33,7 +33,7 @@ public abstract class databases<T> {
     }
     catch (IOException e){
         System.out.println("Error reading file");
-    }
+    }}
 
 
 }
