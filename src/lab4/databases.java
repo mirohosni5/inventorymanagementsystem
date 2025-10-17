@@ -56,7 +56,7 @@ public abstract class databases<T> {
                if (record instanceof EmployeeUser) {
                    bw.write(((EmployeeUser) record).lineRepresentation());
                } else if (record instanceof Product) { //i used instanceof here to check object type
-                   bw.write(((Product) record).lineRepresentation()); //i still didnt create product class here so dont worry ab
+                   bw.write(((Product) record).lineRepresentation()); //i still didnt create product class here so dont worry about the error
                    
                }
 
