@@ -67,7 +67,9 @@ public abstract class databases<T extends IDtkenRecord> {
         }  return null;
         }
         public void insertRecord(T record){
-        if(record==)
+        if(record==null){
+            return
+        }
         }
 
     }
