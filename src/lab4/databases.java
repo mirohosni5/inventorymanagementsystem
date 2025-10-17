@@ -44,7 +44,9 @@ public abstract class databases<T> {
         System.out.println("Error closing file");
     }
     //lets return the lists
-        public ArrayList<T> returnAllRecords()
+        public ArrayList<T> returnAllRecords(){
+        
+        }
 
 
 }
