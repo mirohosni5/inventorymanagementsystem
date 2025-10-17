@@ -11,7 +11,7 @@ public abstract class databases<T> {
     public void readFromFile(){
         records.clear();//to clear anything inside record first
         BufferedReader br=null;
-        // we are trying to find the file fi
+        // we are trying to find the file first
         try{ br=new BufferedReader(new FileReader(filename));
 
     }
