@@ -54,7 +54,7 @@ public abstract class databases<T> {
     public boolean contains(String key){
             for( T record:records){
                 if ( record instanceof EmployeeUser){
-                    if(((Emp.getEmployeeId().equalsIgnoreCase(key)){
+                    if(p.getEmployeeId().equalsIgnoreCase(key)){
                         return true;
                     }
                     else if (record instanceof Product){
