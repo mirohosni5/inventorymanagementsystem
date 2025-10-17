@@ -14,6 +14,6 @@ public abstract class databases<T> {
         try{ br=new BufferedReader(new FileReader(filename));
 
     }
-        catch (FileNotFoundException E)
+        catch (FileNotFoundException e)
 
 }}
