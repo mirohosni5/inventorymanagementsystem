@@ -57,15 +57,7 @@ public abstract class databases<T> {
            
 
     public void savetoFile(){
-       try{  BufferedWriter bw= new BufferedWriter(new FileWriter(filename));
-           for(T record:records){
-               if (record instanceof EmployeeUser) {
-                   bw.write(((EmployeeUser) record).lineRepresentation());
-               } else if (record instanceof Product) { //i used instanceof here to check object type
-                   bw.write(((Product) record).lineRepresentation()); //i still didnt create product class here so dont worry about the error
-                   
-               }
-
+      
            }
            bw.close();
            }
