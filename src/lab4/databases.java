@@ -47,7 +47,7 @@ public abstract class databases<T extends IDtkenRecord> {
 
 
 }
-
+    public abstract T createRecord(String line);
 //lets return the lists
     public ArrayList<T> returnAllRecords(){
 
