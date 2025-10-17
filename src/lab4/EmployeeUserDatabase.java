@@ -15,21 +15,7 @@ public class EmployeeUserDatabase {
      contains(String key){
         return EmployeeUser.isIDTaken(key,records);
     }
-    public EmployeeUser getRecord(String key){//searching for the record using the contain method we made
-         if (contains(key)){
-             for (EmployeeUser emp:records){
-                 if (emp.getEmployeeId().equalsIgnoreCase(key)){
-                     return emp;
-                 }
-             }
-         }
-         else{
-             System.out.println("id doesnt exist");
-             return null;
-         }
-
-        return null;
-    }
+ 
 
     }
 
