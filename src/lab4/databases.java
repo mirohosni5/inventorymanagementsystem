@@ -54,24 +54,7 @@ public abstract class databases<T> {
     }
 
     public boolean contains(String key){
-            for( T record:records){
-                if ( record instanceof EmployeeUser){
-                    EmployeeUser emp=(EmployeeUser) record;
-                    if(emp.getEmployeeId().equalsIgnoreCase(key)){
-                        return true;
-                    }
-                    else if (record instanceof Product){
-                        Product prod=(Product) record;
-                        if(prod.getProductId().equalsIgnoreCase(key)){
-                            return true;
-                        }
-
-                    }
-                }
-
-            }
-            return false;
-    }
+           
 
     public void savetoFile(){
        try{  BufferedWriter bw= new BufferedWriter(new FileWriter(filename));
