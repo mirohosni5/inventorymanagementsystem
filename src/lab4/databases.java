@@ -25,7 +25,7 @@ public abstract class databases<T> {
     try{
         String line;
         while ((line=br.readLine())!=null){
-            T record= createRecord(line);
+             record= createRecord(line);
             if (record!=null){
                 records.add(record);
 
