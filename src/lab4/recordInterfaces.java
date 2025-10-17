@@ -1,4 +1,5 @@
 package lab4;
 
-public inter recordInterfaces {
+public interface recordInterfaces {
+    
 }
