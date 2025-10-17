@@ -12,10 +12,8 @@ public class EmployeeUserDatabase {
     }
 
 
-     contains(String key){
-        return EmployeeUser.isIDTaken(key,records);
-    }
- 
+     
+
 
     }
 
