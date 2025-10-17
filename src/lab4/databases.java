@@ -27,9 +27,12 @@ public abstract class databases<T> {
             T record= createrecord(line);
             if (record!=null){
                 records.add(record);
-                
+
             }
         }
+    }
+    catch (IOException e){
+        System.out.println("Error reading file");
     }
 
 
