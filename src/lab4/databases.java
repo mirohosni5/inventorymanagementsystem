@@ -57,7 +57,7 @@ public abstract class databases<T> {
                     if(((EmployeeUser) record).getEmployeeId().equalsIgnoreCase(key)){
                         return true;
                     }
-                    else if (record instanceof )
+                    else if (record instanceof Product)
                 }
 
             }
