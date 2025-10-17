@@ -5,4 +5,5 @@ import java.util.*;
 public abstract class databases<T> {
     public ArrayList<T> records= new ArrayList<>();
     public String filename;
+    
 }
