@@ -8,7 +8,7 @@ public abstract class databases<T> {
     public databases(String filename){
         this.filename=filename;
     }
-    public abstract void createRecord(String line);
+    public abstract v createRecord(String line);
     public void readFromFile(){
         records.clear();//to clear anything inside record first
         BufferedReader br=null;
