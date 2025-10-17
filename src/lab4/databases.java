@@ -80,6 +80,7 @@ public abstract class databases<T extends IDtkenRecord> {
         saveToFile();
         }
         public void deleteRecord(String key){
+        Th=
         if(!contains(key)){
             System.out.println("id isnt there");
         }
