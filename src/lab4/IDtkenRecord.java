@@ -11,7 +11,8 @@ public abstract class IDtkenRecord  implements recordInterfaces{
                return false;
                }
 @Override
-    public abstract String lineR
+    public abstract String lineRepresentation();
+    
     }
 
 
