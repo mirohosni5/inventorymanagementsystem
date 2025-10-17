@@ -44,7 +44,7 @@ public abstract class databases<T> {
         System.out.println("Error closing file");
     }
     //lets return the lists
-       public T returnr
+       public T returnrecords()
 
 }
 
