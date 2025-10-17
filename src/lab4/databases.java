@@ -45,7 +45,7 @@ public abstract class databases<T> {
     }
     //lets return the lists
         public ArrayList<T> returnAllRecords(){
-        return records
+        return records;
         }
 
 
