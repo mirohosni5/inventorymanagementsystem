@@ -87,11 +87,7 @@ public class EmployeeUser implements recordInterfaces {
     }
 
     public String getSearchKey(List<EmployeeUser>employees) {
-       if (EmployeeUser.isIDTaken(employeeId, employees)){
-           System.out.println("Employee ID exists");
-           return null;
-       }
-else{
+      
         return employeeId;
     }
 
