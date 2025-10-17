@@ -76,7 +76,7 @@ public abstract class databases<T extends IDtkenRecord> {
             return;
         }
         records.add(record);
-        
+        saveToFile();
         }
 
     }
