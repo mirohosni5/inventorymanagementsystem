@@ -73,6 +73,7 @@ public abstract class databases<T extends IDtkenRecord> {
         }
         if(contains(record.getSearchKey())){
             System.out.println("id exists");
+            retun;
         }
         }
 
