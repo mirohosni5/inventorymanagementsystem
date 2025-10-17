@@ -85,7 +85,13 @@ public class EmployeeUser implements recordInterfaces {
     public String lineRepresentation() {
         return String.join(",",employeeId,name,email,address,phoneNumber);
     }
-@override
+
+    @Override
+    public String getSearchKey() {
+        return "";
+    }
+
+    @override
     public String getSearchKey(List<EmployeeUser>employees) {
 
         return employeeId;
