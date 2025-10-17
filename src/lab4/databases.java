@@ -51,8 +51,8 @@ public abstract class databases<T> {
         return records;
     }
     public void savetoFile(){
-        BufferedWriter be=null;
-        
+       try BufferedWriter be=null;
+
     }
 
 
