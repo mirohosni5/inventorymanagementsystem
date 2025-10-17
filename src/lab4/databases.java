@@ -56,7 +56,7 @@ public abstract class databases<T> {
                if (record instanceof EmployeeUser) {
                    bw.write(((EmployeeUser) record).lineRepresentation());
                } else if (record instanceof Product) {
-                   bw.println()
+                   bw.println(((Product) record).lineRepresentation());))
                    
                }
 
