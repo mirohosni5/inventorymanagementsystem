@@ -2,7 +2,7 @@ package lab4;
 import java.io.*;
 import java.util.*;
 
-public abstract class databases<T> {
+public abstract class databases<T exten> {
     public ArrayList<T> records= new ArrayList<>();
     public String filename;
     public databases(String filename){
