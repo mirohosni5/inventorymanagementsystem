@@ -15,7 +15,9 @@ public abstract class databases<T extends IDtkenRecord> {
             }
             System.out.println(filename +" "+"is saved");
         }
-        catch(IOException e)
+        catch(IOException e){
+            
+        }
     }
 
     public void readFromFile(){
