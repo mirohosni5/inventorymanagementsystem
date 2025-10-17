@@ -58,7 +58,7 @@ public abstract class databases<T> {
                         return true;
                     }
                     else if (record instanceof Product){
-                        if(((Product) record).)
+                        if(((Product) record).getP)
                     }
                 }
 
