@@ -1,6 +1,6 @@
 package lab4;
 import java.util.*;
-public class EmployeeUser extends   {
+public class EmployeeUser extends IDtkenRecord  {
     private String employeeId;
     private String name;
     private String email;
