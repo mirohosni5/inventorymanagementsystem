@@ -12,50 +12,7 @@ public class EmployeeUserDatabase {
     }
 
 
-    public void readFromFile(){
-        records.clear();
-        BufferedReader b= null;
-        //let's see if file exists first
-        try{
-             b=new BufferedReader(new FileReader(filename));
-
-        }
-        catch (FileNotFoundException e){
-            System.out.println("cannot find file");
-            return;
-        }
-//le t's read the file
-        String line;
-        try{
-            while ((line=b.readLine())!=null){
-                EmployeeUser emp=createRecordFrom(line);
-                if (emp!=null){
-                    records.add(emp);
-                }
-            }
-        }
-        catch (IOException e){
-            System.out.println("Error reading file");
-
-        }
-
-
-
-    }
-    public EmployeeUser createRecordFrom(String line){
-        String[] data=line.split("," );
-
-        assert  data.length==5; //assert make sure the data will stay as five, and it will give an error if it is more
-
-        String employeeId=data[0].trim();
-        String name=data[1].trim();
-        String email=data[2].trim();
-        String address=data[3].trim();
-        String phonenumber=data[4].trim();
-        return new EmployeeUser(employeeId,name,email,address,phonenumber);
-    }
-
-    public boolean contains(String key){
+     contains(String key){
         return EmployeeUser.isIDTaken(key,records);
     }
     public EmployeeUser getRecord(String key){//searching for the record using the contain method we made
