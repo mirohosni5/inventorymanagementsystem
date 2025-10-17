@@ -54,7 +54,7 @@ public abstract class databases<T extends IDtkenRecord> {
     }
     public T getRecord(String key){
         if(!contains(key)){
-            System.out.println("Record not found");
+            
             return null;
         })
     }
