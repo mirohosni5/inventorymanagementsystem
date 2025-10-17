@@ -10,7 +10,15 @@ public abstract class databases<T> {
     }
     public void readFromFile(){
         records.clear(); //to clear anything inside record first
-        try{ br=new
+        try{ br=new BufferedReader(new FileReader(filename));
+            String line=br.readLine();
+            while (line!=null){
+                T record= createObject(line.split(","));
+                records.add(record);
+                line=br.readLine();
+            }
+            br.close();
+        }
     }
 
 }
