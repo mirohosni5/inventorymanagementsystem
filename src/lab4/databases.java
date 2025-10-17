@@ -85,7 +85,7 @@ public abstract class databases<T extends IDtkenRecord> {
             System.out.println("id isnt there");
         }
         else{
-            if()
+            if(itemDelt)
             records.remove(itemDeleted);
         }
         }
