@@ -16,7 +16,7 @@ public abstract class databases<T extends IDtkenRecord> {
             System.out.println(filename +" "+"is saved");
         }
         catch(IOException e){
-            System.out.println(filename +" "+ "could")
+            System.out.println(filename +" "+ "couldnt save");
         }
     }
 
