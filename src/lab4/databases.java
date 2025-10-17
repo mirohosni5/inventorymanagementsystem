@@ -9,7 +9,7 @@ public abstract class databases<T> {
         this.filename=filename;
     }
     public void readFromFile(){
-        records.clear();
+        records.clear(); //to clear anythi
     }
 
 }
