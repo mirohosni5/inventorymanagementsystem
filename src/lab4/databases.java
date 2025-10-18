@@ -66,7 +66,7 @@ public abstract class databases {
         return records;
     }
 
-    // her
+    // here i am checking 
     public boolean contains(String key){
         for (Object recd : records) {
             recordInterfaces rec = (recordInterfaces) recd;
