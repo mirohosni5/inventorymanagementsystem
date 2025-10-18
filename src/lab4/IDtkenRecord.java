@@ -9,7 +9,7 @@ public abstract class IDtkenRecord  implements recordInterfaces{ /*this means li
 
                for(Object s:list){
                    recordInterfaces recd=(recordInterfaces) s;
-                   if( s!=null && s.getSearchKey().equalsIgnoreCase(key)){
+                   if( s!=null && ){
                        return true;}
 
                    }
