@@ -85,7 +85,7 @@ public abstract class databases {
             }
         }
         return null;
-    }
+    }//
 
     public void insertRecord(recordInterfaces record){
         if (record == null) return;
