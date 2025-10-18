@@ -66,7 +66,7 @@ public abstract class databases {
         return records;
     }
 
-    // lookups
+    // her
     public boolean contains(String key){
         for (Object recd : records) {
             recordInterfaces rec = (recordInterfaces) recd;
@@ -85,7 +85,7 @@ public abstract class databases {
             }
         }
         return null;
-    }/
+    }
 
     public void insertRecord(recordInterfaces record){
         if (record == null) return;
