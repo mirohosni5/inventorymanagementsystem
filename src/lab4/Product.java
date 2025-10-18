@@ -35,6 +35,7 @@ public String getProductID() {
     public String getSupplierName() {
         return supplierName;
     }
+    
    
     public int getQuantity() {
         return quantity;
