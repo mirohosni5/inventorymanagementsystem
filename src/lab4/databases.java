@@ -1,109 +1,112 @@
 package lab4;
+
 import java.io.*;
 import java.util.*;
-//here i used generic so it would take any object type  only from IDtakenRecord
-public abstract class databases<T extends IDtkenRecord> {
-    public ArrayList<T> records= new ArrayList<>();
+
+// i used casting here instead of generics
+public abstract class databases {
+
+    public ArrayList<Object> records = new ArrayList<>();
     public String filename;
+
     public databases(String filename){
-        this.filename=filename;
+        this.filename = filename;
     }
+
+
+    public abstract recordInterfaces createRecord(String line);
+
+    // save all records
     public void saveToFile(){
-        try(PrintWriter pw=new PrintWriter(new FileWriter(filename))){
-            for(T record:records){
-                pw.println(record.lineRepresentation()); 
+        try (PrintWriter pw = new PrintWriter(new FileWriter(filename))) {
+            for (Object obj : records) {
+                recordInterfaces rec = (recordInterfaces) obj;
+                pw.println(rec.lineRepresentation());
             }
-            System.out.println(filename +" "+"is saved");
-        }
-        catch(IOException e){
-            System.out.println(filename +" "+ "couldnt save");
+            System.out.println(filename + " is saved");
+        } catch (IOException e) {
+            System.out.println(filename + " couldn't save");
         }
     }
 
+    // load all records
     public void readFromFile(){
-        records.clear();//to clear anything inside record first
-        BufferedReader br=null;
-        // we are trying to find the file first
-        try{ br=new BufferedReader(new FileReader(filename));
+        records.clear();
+        BufferedReader br = null;
 
-    }
-        catch (FileNotFoundException e){
+        try {
+            br = new BufferedReader(new FileReader(filename));
+        }
+        catch (FileNotFoundException e) {
             System.out.println("File not found");
-            return; //stop if file not found
+            return;
         }
 
-        //reading the file
-    try{
-        String line;
-        while ((line=br.readLine())!=null){
-            T record= createRecord(line);
-            if (record!=null){
-                records.add(record);
-
+        try {
+            String line;
+            while ((line = br.readLine()) != null) {
+                recordInterfaces rec = createRecord(line);
+                if (rec != null) records.add(rec); // add as Object
             }
         }
-    }
-    catch (IOException e){
-        System.out.println("Error reading file");
-    }
-    //did the try and catch in closing for safety
-    try{
-        if(br!=null){
-            br.close();
+        catch (IOException e) {
+            System.out.println("Error reading file");
+        }
+
+        try {
+            if (br != null) br.close();
+        }
+        catch (IOException e) {
+            System.out.println("Error closing file");
         }
     }
-    catch (IOException e){
-        System.out.println("Error closing file");
-    }
 
 
-}
-    public abstract T createRecord(String line);
-//lets return the lists
-    public ArrayList<T> returnAllRecords(){
-
+    public ArrayList<Object> returnAllRecords(){
         return records;
     }
 
+    // lookups
     public boolean contains(String key){
-        return IDtkenRecord.isIDtaken(key,records);
-    }
-    public T getRecord(String key){
-        if(!contains(key)){
-
-            return null;
-        }
-        for(T recd: records){
-            if(recd.getSearchKey().equalsIgnoreCase(key)){
-                return recd;
+        for (Object recd : records) {
+            recordInterfaces rec = (recordInterfaces) recd;
+            if (rec.getSearchKey().equalsIgnoreCase(key)) {
+                return true;
             }
-        }  return null;
         }
-        public void insertRecord(T record){
-        if(record==null){
-            return;
+        return false;
+    }
 
+    public recordInterfaces getRecord(String key){
+        for (Object recd : records) {
+            recordInterfaces rec = (recordInterfaces) recd;
+            if (rec.getSearchKey().equalsIgnoreCase(key)) {
+                return rec;
+            }
         }
-        if(contains(record.getSearchKey())){
+        return null;
+    }
+
+    public void insertRecord(recordInterfaces record){
+        if (record == null) return;
+
+        if (contains(record.getSearchKey())) {
             System.out.println("id exists");
             return;
         }
         records.add(record);
-        System.out.println("record added"+ record.getSearchKey());
+        System.out.println("record added " + record.getSearchKey());
         saveToFile();
-        }
-        public void deleteRecord(String key){
-        T itemDeleted=getRecord(key);
-        if(!contains(key)){
-            System.out.println("id isnt there");
-        }
-        else{
-            if(itemDeleted!=null){
-            records.remove(itemDeleted);}
-        }
-        saveToFile();
-        }
-
     }
 
-
+    public void deleteRecord(String key){
+        recordInterfaces target = getRecord(key);
+        if (target == null) {
+            System.out.println("id isn't there");
+            return;
+        }
+        records.remove(target);
+        System.out.println("record deleted " + key);
+        saveToFile();
+    }
+}
