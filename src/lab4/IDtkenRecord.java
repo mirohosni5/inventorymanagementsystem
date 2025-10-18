@@ -8,7 +8,7 @@ public abstract class IDtkenRecord  implements recordInterfaces{ /*this means li
     public static boolean isIDtaken(String key, List<Object>list){ //iwill use genric here for it to work with any type of object
 
                for(Object s:list){
-                   recordInterfaces rec=
+                   recordInterfaces recd=
                    if( s!=null && s.getSearchKey().equalsIgnoreCase(key)){
                        return true;}
 
