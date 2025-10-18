@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 
 // i used casting here instead of generics
-public abstract class databases  extend {
+public abstract class databases extends {
 
     public ArrayList<Object> records = new ArrayList<>();
     public String filename;
