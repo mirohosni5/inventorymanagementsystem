@@ -1,6 +1,6 @@
 package lab4;
 
-public class EmployeeUser extends I  {
+public class EmployeeUser implements   {
     private String employeeId;
     private String name;
     private String email;
