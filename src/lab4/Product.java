@@ -14,7 +14,10 @@ private float price;
         this.quantity = quantity;
         this.price = price;
     }
-public 
+public String getProductID() {
+        return productID;
+    }
+    
    
     public int getQuantity() {
         return quantity;
