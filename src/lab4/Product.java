@@ -41,11 +41,11 @@ public String getProductID() {
     public float getPrice() {
         return price;
     }
-    public void setPrice(float price) {
+    public v setPrice(float price) {
         this.price = price;
 
     }
-    
+
 
    
     public int getQuantity() {
