@@ -26,7 +26,15 @@ public String getProductID() {
     public void setProductName(String productName) {
         this.productName = productName;
     }
-    
+    public String getManufacturerName() {
+        return manufacturerName;
+    }
+    public void setManufacturerName(String manufacturerName) {
+        this.manufacturerName = manufacturerName;
+    }
+    public String getSupplierName() {
+        return supplierName;
+    }
    
     public int getQuantity() {
         return quantity;
