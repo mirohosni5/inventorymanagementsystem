@@ -43,8 +43,10 @@ public String getProductID() {
     }
     public void setPrice(float price) {
         this.price = price;
-        
+
     }
+
+    
 
    
     public int getQuantity() {
