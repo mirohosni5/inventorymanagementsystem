@@ -5,7 +5,7 @@ import java.util.*;
      */
 public abstract class IDtkenRecord  implements recordInterfaces{ /*this means list of any clas  that implements the parent class will work
     to check for same ids*/
-    public static boolean isIDtaken(String key, List<object>list){ //iwill use genric here for it to work with any type of object
+    public static boolean isIDtaken(String key, List<Objectbject>list){ //iwill use genric here for it to work with any type of object
 
                for(recordInterfaces s:list){
                    if( s!=null && s.getSearchKey().equalsIgnoreCase(key)){
