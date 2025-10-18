@@ -3,7 +3,7 @@ package lab4;
 import java.io.*;
 import java.util.*;
 
-// i used casting here instead of generics i a
+// i used casting here instead of generics i also removed the parent idtaken since it was just 
 public abstract class databases {
 
     public ArrayList<Object> records = new ArrayList<>();
