@@ -14,7 +14,7 @@ private float price;
         this.quantity = quantity;
         this.price = price;
     }
-    //sette
+    //setters and getters
 public String getProductID() {
         return productID;
     }
