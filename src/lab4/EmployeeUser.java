@@ -1,6 +1,6 @@
 package lab4;
 
-public class EmployeeUser extends IDtkenRecord  {
+public class EmployeeUser extends I  {
     private String employeeId;
     private String name;
     private String email;
