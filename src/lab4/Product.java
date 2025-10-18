@@ -24,4 +24,10 @@ private float price;
         this.quantity = quantity;
     }
 
+    public String lineRepresentation(){
+    return String.join(",",productID,productName,manufacturerName,supplierName,Integer.toString(quantity),Float.toString(price));
+    }
+
+ public String getSearchKey() {
+     return productID; }
 }
