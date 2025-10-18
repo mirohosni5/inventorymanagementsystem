@@ -7,7 +7,7 @@ public abstract class IDtkenRecord  implements recordInterfaces{ /*this means li
     to check for same ids*/
     public static boolean isIDtaken(String key, List<Object>list){ //iwill use genric here for it to work with any type of object
 
-               for( s:list){
+               for(Object s:list){
                    if( s!=null && s.getSearchKey().equalsIgnoreCase(key)){
                        return true;}
 
