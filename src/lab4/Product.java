@@ -35,7 +35,15 @@ public String getProductID() {
     public String getSupplierName() {
         return supplierName;
     }
-    
+    public void setSupplierName(String supplierName) {
+        this.supplierName = supplierName;
+    }
+    public float getPrice() {
+        return price;
+    }
+    public void setPrice(float price) {
+        this.price = price;
+    }
    
     public int getQuantity() {
         return quantity;
