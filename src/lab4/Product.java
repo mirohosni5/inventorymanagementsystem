@@ -1,7 +1,7 @@
 
 package lab4;
 
-public class Product {
+public class Product implements recordInterfaces {
 private String productID,productName,manufacturerName,supplierName;
 private int quantity;
 private float price;
@@ -24,10 +24,12 @@ private float price;
         this.quantity = quantity;
     }
 
+    @Override
     public String lineRepresentation(){
     return String.join(",",productID,productName,manufacturerName,supplierName,Integer.toString(quantity),Float.toString(price));
     }
-
- public String getSearchKey() {
+    @Override
+    public String getSearchKey() {
      return productID; }
+
 }
