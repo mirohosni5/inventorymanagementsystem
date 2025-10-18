@@ -17,6 +17,9 @@ private float price;
 public String getProductID() {
         return productID;
     }
+    public void setProductID(String productID) {
+        this.productID = productID;
+    }
     
    
     public int getQuantity() {
