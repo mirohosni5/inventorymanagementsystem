@@ -11,7 +11,7 @@ public abstract class databases<T extends IDtkenRecord> {
     public void saveToFile(){
         try(PrintWriter pw=new PrintWriter(new FileWriter(filename))){
             for(T record:records){
-                pw.println(record.lineRepresentation()); //hello
+                pw.println(record.lineRepresentation()); //
             }
             System.out.println(filename +" "+"is saved");
         }
