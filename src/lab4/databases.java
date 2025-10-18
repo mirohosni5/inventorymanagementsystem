@@ -72,7 +72,7 @@ public abstract class databases {
             recordInterfaces rec = (recordInterfaces) recd;
             if (rec.getSearchKey().equalsIgnoreCase(key)) {
                 return true;
-            } //he
+            } 
         }
         return false;
     }
