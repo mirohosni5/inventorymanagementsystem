@@ -3,7 +3,7 @@ package lab4;
 import java.io.*;
 import java.util.*;
 
-// i used casting here instead of generics i also removed the parent idtaken
+/ i used casting here instead of generics i also removed the parent idtaken
 // since it was just helper parent class when i used generics
 public abstract class databases {
 
