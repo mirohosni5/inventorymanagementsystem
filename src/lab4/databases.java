@@ -72,7 +72,7 @@ public abstract class databases {
             recordInterfaces rec = (recordInterfaces) recd;
             if (rec.getSearchKey().equalsIgnoreCase(key)) {
                 return true;
-            } 
+            }
         }
         return false;
     }
@@ -85,7 +85,7 @@ public abstract class databases {
             }
         }
         return null;
-    }//
+    }/
 
     public void insertRecord(recordInterfaces record){
         if (record == null) return;
