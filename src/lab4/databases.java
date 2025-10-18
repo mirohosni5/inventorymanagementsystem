@@ -97,7 +97,7 @@ public abstract class databases {
         }
         records.add(record);
         System.out.println("record added " + record.getSearchKey());
-        saveToFile()
+
     }
 
     public void deleteRecord(String key){
@@ -108,6 +108,6 @@ public abstract class databases {
         }
         records.remove(target);
         System.out.println("record deleted " + key);
-        saveToFile();
+        
     }
 }
