@@ -97,7 +97,7 @@ public abstract class databases {
         }
         records.add(record);
         System.out.println("record added " + record.getSearchKey());
-        saveToFile();
+        saveToFile()
     }
 
     public void deleteRecord(String key){
