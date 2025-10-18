@@ -66,7 +66,7 @@ public abstract class databases {
         return records;
     }
 
-    // here i am checking if the 
+    // here i am checking if the id is the same
     public boolean contains(String key){
         for (Object recd : records) {
             recordInterfaces rec = (recordInterfaces) recd;
