@@ -17,7 +17,7 @@ public abstract class databases {
 
     public abstract recordInterfaces createRecord(String line);
 
-    // save all records
+    
     public void saveToFile(){
         try (PrintWriter pw = new PrintWriter(new FileWriter(filename))) {
             for (Object obj : records) {
