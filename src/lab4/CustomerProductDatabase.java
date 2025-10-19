@@ -17,7 +17,7 @@ public class CustomerProductDatabase extends databases {
         LocalDate purchaseDate = LocalDate.parse(parts[2]);
         boolean paid = Boolean.parseBoolean(parts[3]);
 
-        return new CustomerProductDatabase(customerSSN, productID, purchaseDate, paid);
+        return new CustomerProduct(customerSSN, productID, purchaseDate);
     }
 
 }
