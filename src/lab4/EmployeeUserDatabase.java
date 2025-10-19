@@ -1,8 +1,6 @@
 package lab4;
-import java.util.*;
-import java.io.*;
 
-   public class EmployeeUserDatabase extends databases{
+public class EmployeeUserDatabase extends databases {
     public EmployeeUserDatabase(String filename) {
         super(filename);
     }
@@ -21,8 +19,7 @@ import java.io.*;
         return new EmployeeUser(id, name, email, address, phone);
     }
 
-
-    }
+}
 
 
 
