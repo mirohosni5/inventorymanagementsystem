@@ -24,7 +24,7 @@ public class EmployeeRole implements roleinterface {
         System.out.println("Product added.");
     }
     public Product[] getListOfProducts(){
-        ArrayList<Product> list = productsDatabase.returnAllRecords();
+        ArrayList<Object> list = productsDatabase.returnAllRecords();
         return list.toArray(new Product[0]);
 
     }
@@ -34,7 +34,7 @@ public class EmployeeRole implements roleinterface {
 
     }
     public boolean purchaseProduct(String customerSSN, String productID, LocalDate purchaseDate){
-        Product p = productsDatabase.getRecord(productID);
+        Product p = (Product) productsDatabase.getRecord(productID);
         if (p == null) {
             System.out.println("Product not found!");
             return false;
@@ -55,7 +55,7 @@ public class EmployeeRole implements roleinterface {
         productsDatabase.readFromFile();
         customerProductDatabase.readFromFile();
         if (returnDate.isBefore(purchaseDate)) return -1;
-        Product p = productsDatabase.getRecord(productID);
+        Product p = (Product) productsDatabase.getRecord(productID);
         if (p == null) return -1;
         String key = customerSSN + "," + productID + "," + purchaseDate.format(java.time.format.DateTimeFormatter.ofPattern("dd-MM-yyyy"));
         if (!customerProductDatabase.contains(key)) return -1;
