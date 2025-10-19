@@ -1,4 +1,12 @@
 package lab4;
 
-public class CustomerProductDatabase {
+import java.time.LocalDate;
+import java.util.ArrayList;
+
+public class CustomerProductDatabase extends databases {
+    public CustomerProductDatabase(String filename){
+        super(filename);
+    }
+
+
 }
