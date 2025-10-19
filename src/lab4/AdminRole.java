@@ -2,7 +2,7 @@ package lab4;
 
 import java.util.ArrayList;
 
-public class AdminRole implements Role {
+public class AdminRole implements roleinterface {
      private EmployeeUserDatabase database;
     public AdminRole(){
         database = new EmployeeUserDatabase("Employees.txt");
