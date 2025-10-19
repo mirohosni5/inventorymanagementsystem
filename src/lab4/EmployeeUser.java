@@ -1,6 +1,6 @@
 package lab4;
 
-public class EmployeeUser e  {
+public class EmployeeUser {
     private String employeeId;
     private String name;
     private String email;
