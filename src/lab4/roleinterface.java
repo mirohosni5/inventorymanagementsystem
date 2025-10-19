@@ -1,5 +1,5 @@
 package lab4;
 
 public interface roleinterface {
-    void logout();
+   protected void logout();
 }
