@@ -6,7 +6,5 @@ public class CustomerProductDatabase extends databases {
     public CustomerProductDatabase(String filename){
         super(filename);
     }
-    //
-
 
 }
