@@ -19,7 +19,7 @@ public class AdminRole {
     }
 
     public EmployeeUser[] getListOfEmployees() {
-        ArrayList<EmployeeUser> list = database.returnAllRecords();
+        ArrayList<Object> list = database.returnAllRecords();
         return list.toArray(new EmployeeUser[0]);
     }
 
