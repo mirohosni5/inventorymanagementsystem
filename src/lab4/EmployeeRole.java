@@ -5,10 +5,10 @@ import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 
 public class EmployeeRole implements roleinterface {
-    private productDatabase productsDatabase;
+    private ProductDatabase productsDatabase;
     private CustomerProductDatabase customerProductDatabase;
     public EmployeeRole() {
-        productsDatabase = new productDatabase("Products.txt");
+        productsDatabase = new ProductDatabase("Products.txt");
         customerProductDatabase = new CustomerProductDatabase("CustomersProducts.txt");
         productsDatabase.readFromFile();
         customerProductDatabase.readFromFile();
@@ -24,8 +24,8 @@ public class EmployeeRole implements roleinterface {
         System.out.println("Product added.");
     }
     public Product[] getListOfProducts(){
-        ArrayList<Object> list = productsDatabase.returnAllRecords();
-        return (Product[]) list.toArray(new Object[0]);
+        ArrayList<Product> list = productsDatabase.returnAllRecords();
+        return list.toArray(new Product[0]);
 
     }
     public CustomerProduct[] getListOfPurchasingOperations(){
@@ -34,7 +34,7 @@ public class EmployeeRole implements roleinterface {
 
     }
     public boolean purchaseProduct(String customerSSN, String productID, LocalDate purchaseDate){
-        Product p = (Product) productsDatabase.getRecord(productID);
+        Product p = productsDatabase.getRecord(productID);
         if (p == null) {
             System.out.println("Product not found!");
             return false;
@@ -81,7 +81,6 @@ public class EmployeeRole implements roleinterface {
         if (changed) customerProductDatabase.saveToFile();
         return changed;
     }
-    @Override
     public void logout() {
         productsDatabase.saveToFile();
         customerProductDatabase.saveToFile();
