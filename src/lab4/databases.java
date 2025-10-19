@@ -61,6 +61,17 @@ public abstract class databases {
             System.out.println("Error closing file");
         }
     }
+    public void deleteRecord(String key){
+        recordInterfaces target = getRecord(key);
+        if (target == null) {
+            System.out.println("id isn't there");
+            return;
+        }
+        records.remove(target);
+        System.out.println("record deleted " + key);
+
+    }
+}
 
 
     public ArrayList<Object> returnAllRecords(){
