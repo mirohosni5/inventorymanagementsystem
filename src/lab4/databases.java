@@ -55,7 +55,7 @@ public abstract class databases {
         }
 
         try {
-            br.close();
+            br.close();  
         }
         catch (IOException e) {
             System.out.println("Error closing file");
