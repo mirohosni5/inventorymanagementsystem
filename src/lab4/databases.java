@@ -17,7 +17,7 @@ public abstract class databases {
 
     public abstract recordInterfaces createRecord(String line);
 
-    
+
     public void saveToFile(){
         try (PrintWriter pw = new PrintWriter(new FileWriter(filename))) {
             for (Object obj : records) {
@@ -30,7 +30,7 @@ public abstract class databases {
         }
     }
 
-    // load all records
+    
     public void readFromFile(){
         records.clear();
         BufferedReader br = null;
