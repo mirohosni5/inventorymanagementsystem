@@ -47,7 +47,7 @@ public abstract class databases {
             String line;
             while ((line = br.readLine()) != null) {
                 recordInterfaces rec = createRecord(line);
-                if (rec != null) records.add(rec); // add as Object
+                if (rec != null) records.add(rec); // add as Obj
             }
         }
         catch (IOException e) {
