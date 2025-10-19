@@ -6,6 +6,11 @@ public class EmployeeUserDatabase {
     private ArrayList<EmployeeUser> records;
     private String filename;
 
+    public EmployeeUserDatabase(String filename) {
+        this.filename = filename;
+        this.records = new ArrayList<>();
+    }
+
     }
 
 
