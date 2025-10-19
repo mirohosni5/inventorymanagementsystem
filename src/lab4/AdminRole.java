@@ -12,9 +12,9 @@ public class AdminRole {
         if (!database.contains(employeeId)) {
             EmployeeUser e= new EmployeeUser(employeeId, name, email, address, phoneNumber);
             database.insertRecord(e);
-            System.out.println("Employee added successfully!");
+            System.out.println("Employee added successfully.");
         } else {
-            System.out.println("Employee ID already exists!");
+            System.out.println("Employee ID already exists.");
         }
     }
 
