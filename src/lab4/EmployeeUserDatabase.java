@@ -1,6 +1,6 @@
 package lab4;
 
-   public class EmployeeUserDatabase extends databases{
+public class EmployeeUserDatabase extends databases {
     public EmployeeUserDatabase(String filename) {
         super(filename);
     }
@@ -19,7 +19,7 @@ package lab4;
         return new EmployeeUser(id, name, email, address, phone);
     }
 
-    }
+}
 
 
 
