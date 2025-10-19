@@ -55,7 +55,7 @@ public abstract class databases {
         }
 
         try {
-            br.close();  
+            br.close();
         }
         catch (IOException e) {
             System.out.println("Error closing file");
@@ -96,7 +96,7 @@ public abstract class databases {
             return;
         }
         records.add(record);
-        System.out.println("record added " + record.getSearchKey());
+        System.out.println("record added " + "record.getSearchKey());
 
     }
 
