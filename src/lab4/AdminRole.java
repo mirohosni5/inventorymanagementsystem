@@ -2,7 +2,7 @@ package lab4;
 
 import java.util.ArrayList;
 
-public class AdminRole {
+public class AdminRole implements roleinterface {
      private EmployeeUserDatabase database;
     public AdminRole(){
         database = new EmployeeUserDatabase("Employees.txt");
@@ -19,7 +19,7 @@ public class AdminRole {
     }
 
     public EmployeeUser[] getListOfEmployees() {
-        ArrayList<EmployeeUser> list = database.returnAllRecords();
+        ArrayList<Object> list = database.returnAllRecords();
         return list.toArray(new EmployeeUser[0]);
     }
 

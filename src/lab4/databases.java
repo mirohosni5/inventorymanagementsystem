@@ -3,7 +3,8 @@ package lab4;
 import java.io.*;
 import java.util.*;
 
-// i used casting here instead of generics
+/* i used casting here instead of generics i also removed the parent idtaken
+ since it was just helper parent class when i used generics*/
 public abstract class databases {
 
     public ArrayList<Object> records = new ArrayList<>();
@@ -16,7 +17,7 @@ public abstract class databases {
 
     public abstract recordInterfaces createRecord(String line);
 
-    // save all records
+
     public void saveToFile(){
         try (PrintWriter pw = new PrintWriter(new FileWriter(filename))) {
             for (Object obj : records) {
@@ -29,10 +30,10 @@ public abstract class databases {
         }
     }
 
-    // load all records
+
     public void readFromFile(){
         records.clear();
-        BufferedReader br = null;
+        BufferedReader br;
 
         try {
             br = new BufferedReader(new FileReader(filename));
@@ -46,7 +47,7 @@ public abstract class databases {
             String line;
             while ((line = br.readLine()) != null) {
                 recordInterfaces rec = createRecord(line);
-                if (rec != null) records.add(rec); // add as Object
+                if (rec != null) records.add(rec);
             }
         }
         catch (IOException e) {
@@ -54,7 +55,7 @@ public abstract class databases {
         }
 
         try {
-            if (br != null) br.close();
+            br.close();
         }
         catch (IOException e) {
             System.out.println("Error closing file");
@@ -66,7 +67,7 @@ public abstract class databases {
         return records;
     }
 
-    // lookups
+    // here i am checking if the id is the same
     public boolean contains(String key){
         for (Object recd : records) {
             recordInterfaces rec = (recordInterfaces) recd;
@@ -77,7 +78,7 @@ public abstract class databases {
         return false;
     }
 
-    public recordInterfaces getRecord(String key){
+    public recordInterfaces getRecord(String key){ //i used casting here to return any type of objects
         for (Object recd : records) {
             recordInterfaces rec = (recordInterfaces) recd;
             if (rec.getSearchKey().equalsIgnoreCase(key)) {
@@ -85,7 +86,7 @@ public abstract class databases {
             }
         }
         return null;
-    }//
+    }
 
     public void insertRecord(recordInterfaces record){
         if (record == null) return;
@@ -95,8 +96,8 @@ public abstract class databases {
             return;
         }
         records.add(record);
-        System.out.println("record added " + record.getSearchKey());
-        saveToFile();
+        System.out.println("record added " + " "+record.getSearchKey());
+
     }
 
     public void deleteRecord(String key){
@@ -107,6 +108,6 @@ public abstract class databases {
         }
         records.remove(target);
         System.out.println("record deleted " + key);
-        saveToFile();
+
     }
 }
