@@ -96,7 +96,7 @@ public abstract class databases {
             return;
         }
         records.add(record);
-        System.out.println("record added " + "record.getSearchKey());
+        System.out.println("record added " + " "+record.getSearchKey());
 
     }
 
