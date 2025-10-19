@@ -29,7 +29,7 @@ public class EmployeeRole implements roleinterface {
 
     }
     public CustomerProduct[] getListOfPurchasingOperations(){
-        ArrayList<CustomerProduct> list = customerProductDatabase.returnAllRecords();
+        ArrayList<Object> list = customerProductDatabase.returnAllRecords();
         return list.toArray(new CustomerProduct[0]);
 
     }
@@ -45,7 +45,7 @@ public class EmployeeRole implements roleinterface {
         }
         p.setQuantity(p.getQuantity() - 1);
         CustomerProduct c= new CustomerProduct(customerSSN, productID, purchaseDate);
-        customerProductDatabase.insertRecord(c);
+        customerProductDatabase.insertRecord((recordInterfaces) c);
         productsDatabase.saveToFile();
         customerProductDatabase.saveToFile();
         System.out.println("Purchase recorded successfully.");
@@ -70,12 +70,14 @@ public class EmployeeRole implements roleinterface {
     public boolean applyPayment(String customerSSN, LocalDate purchaseDate) {
         customerProductDatabase.readFromFile();
         boolean changed = false;
-        for (CustomerProduct c : new ArrayList<>(customerProductDatabase.returnAllRecords())) {
+
+        ArrayList<Object> records = customerProductDatabase.returnAllRecords();
+        for (Object obj : records) {
+            CustomerProduct c = (CustomerProduct) obj;
             if (c.getCustomerSSN().equals(customerSSN) && c.getPurchaseDate().equals(purchaseDate)) {
                 if (!c.isPaid()) {
                     c.setPaid(true);
-                    changed = true;
-                }
+                    changed = true;}
             }
         }
         if (changed) customerProductDatabase.saveToFile();
