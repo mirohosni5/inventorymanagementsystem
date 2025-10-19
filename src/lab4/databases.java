@@ -47,7 +47,7 @@ public abstract class databases {
             String line;
             while ((line = br.readLine()) != null) {
                 recordInterfaces rec = createRecord(line);
-                if (rec != null) records.add(rec); 
+                if (rec != null) records.add(rec);
             }
         }
         catch (IOException e) {
@@ -55,7 +55,7 @@ public abstract class databases {
         }
 
         try {
-            if (br != null) br.close();
+            br.close();
         }
         catch (IOException e) {
             System.out.println("Error closing file");
