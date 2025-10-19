@@ -32,7 +32,7 @@ public class AdminRole implements roleinterface
             System.out.println("Employee not found!");
         }
     }
-
+@Override
     public void logout() {
         database.saveToFile();
         System.out.println("Changes saved");
