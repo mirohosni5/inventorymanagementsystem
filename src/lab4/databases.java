@@ -111,5 +111,14 @@ public abstract class databases {
 
     }
 
+    public void deleteRecord(String key){
+        recordInterfaces target = getRecord(key);
+        if (target == null) {
+            System.out.println("id isn't there");
+            return;
+        }
+        records.remove(target);
+        System.out.println("record deleted " + key);
 
+    }
 }
