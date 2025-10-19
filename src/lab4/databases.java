@@ -78,7 +78,7 @@ public abstract class databases {
         return false;
     }
 
-    public recordInterfaces getRecord(String key){
+    public recordInterfaces getRecord(String key){ 
         for (Object recd : records) {
             recordInterfaces rec = (recordInterfaces) recd;
             if (rec.getSearchKey().equalsIgnoreCase(key)) {
