@@ -36,11 +36,11 @@ public class EmployeeRole implements roleinterface {
     public boolean purchaseProduct(String customerSSN, String productID, LocalDate purchaseDate){
         Product p = (Product) productsDatabase.getRecord(productID);
         if (p == null) {
-            System.out.println("Product not found!");
+            System.out.println("Product not found.");
             return false;
         }
         if (p.getQuantity() == 0) {
-            System.out.println("Product out of stock!");
+            System.out.println("Product out of stock.");
             return false;
         }
         p.setQuantity(p.getQuantity() - 1);
