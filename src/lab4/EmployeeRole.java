@@ -13,7 +13,7 @@ public class EmployeeRole implements roleinterface {
         productsDatabase.readFromFile();
         customerProductDatabase.readFromFile();
     }
-    public void addProduct(String productID,String productName,String manufacturerName,String supplierName,int quantity,float price) {
+    public void addProduct(String productID, String productName, String manufacturerName, String supplierName, int quantity, float price) {
         if (productsDatabase.contains(productID)) {
             System.out.println("Product with id " + productID + " already exists.");
             return;
@@ -23,35 +23,39 @@ public class EmployeeRole implements roleinterface {
         productsDatabase.saveToFile();
         System.out.println("Product added.");
     }
-    public Product[] getListOfProducts(){
+    public Product[] getListOfProducts() {
         ArrayList<Object> list = productsDatabase.returnAllRecords();
-        return list.toArray(new Product[0]);
-
+        Product[] products = new Product[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            products[i] = (Product) list.get(i);
+        }
+        return products;
     }
-    public CustomerProduct[] getListOfPurchasingOperations(){
+    public CustomerProduct[] getListOfPurchasingOperations() {
         ArrayList<Object> list = customerProductDatabase.returnAllRecords();
-        return list.toArray(new CustomerProduct[0]);
-
+        CustomerProduct[] operations = new CustomerProduct[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            operations[i] = (CustomerProduct) list.get(i);
+        }
+        return operations;
     }
-    public boolean purchaseProduct(String customerSSN, String productID, LocalDate purchaseDate){
+    public boolean purchaseProduct(String customerSSN, String productID, LocalDate purchaseDate) {
         Product p = (Product) productsDatabase.getRecord(productID);
         if (p == null) {
             System.out.println("Product not found.");
-            return false;
-        }
+            return false;}
         if (p.getQuantity() == 0) {
             System.out.println("Product out of stock.");
-            return false;
-        }
+            return false;}
         p.setQuantity(p.getQuantity() - 1);
-        CustomerProduct c= new CustomerProduct(customerSSN, productID, purchaseDate);
-        customerProductDatabase.insertRecord((recordInterfaces) c);
+        CustomerProduct c = new CustomerProduct(customerSSN, productID, purchaseDate);
+        customerProductDatabase.insertRecord(c);
         productsDatabase.saveToFile();
         customerProductDatabase.saveToFile();
         System.out.println("Purchase recorded successfully.");
         return true;
     }
-    public double returnProduct(String customerSSN,String productID,LocalDate purchaseDate ,LocalDate returnDate){
+    public double returnProduct(String customerSSN, String productID, LocalDate purchaseDate, LocalDate returnDate) {
         productsDatabase.readFromFile();
         customerProductDatabase.readFromFile();
         if (returnDate.isBefore(purchaseDate)) return -1;
@@ -77,9 +81,7 @@ public class EmployeeRole implements roleinterface {
             if (c.getCustomerSSN().equals(customerSSN) && c.getPurchaseDate().equals(purchaseDate)) {
                 if (!c.isPaid()) {
                     c.setPaid(true);
-                    changed = true;}
-            }
-        }
+                    changed = true;}}}
         if (changed) customerProductDatabase.saveToFile();
         return changed;
     }
