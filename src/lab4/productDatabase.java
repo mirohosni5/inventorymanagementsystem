@@ -22,9 +22,4 @@ public class productDatabase extends databases {
         return new Product(productID, productName, manufacturerName, supplierName, quantity, price);
     }
 
-
-
-
-
-
 }
