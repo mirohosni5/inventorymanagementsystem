@@ -24,7 +24,7 @@ public class EmployeeRole implements roleinterface {
         System.out.println("Product added.");
     }
     public Product[] getListOfProducts(){
-        ArrayList<Prod> list = productsDatabase.returnAllRecords();
+        ArrayList<Object> list = productsDatabase.returnAllRecords();
         return list.toArray(new Product[0]);
 
     }
