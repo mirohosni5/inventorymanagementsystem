@@ -4,11 +4,11 @@ import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 
-public class EmployeeRole {
-    private ProductDatabase productsDatabase;
+public class EmployeeRole implements roleinterface {
+    private productDatabase productsDatabase;
     private CustomerProductDatabase customerProductDatabase;
     public EmployeeRole() {
-        productsDatabase = new ProductDatabase("Products.txt");
+        productsDatabase = new productDatabase("Products.txt");
         customerProductDatabase = new CustomerProductDatabase("CustomersProducts.txt");
         productsDatabase.readFromFile();
         customerProductDatabase.readFromFile();
@@ -24,8 +24,8 @@ public class EmployeeRole {
         System.out.println("Product added.");
     }
     public Product[] getListOfProducts(){
-        ArrayList<Product> list = productsDatabase.returnAllRecords();
-        return list.toArray(new Product[0]);
+        ArrayList<Object> list = productsDatabase.returnAllRecords();
+        return (Product[]) list.toArray(new Object[0]);
 
     }
     public CustomerProduct[] getListOfPurchasingOperations(){
@@ -34,7 +34,7 @@ public class EmployeeRole {
 
     }
     public boolean purchaseProduct(String customerSSN, String productID, LocalDate purchaseDate){
-        Product p = productsDatabase.getRecord(productID);
+        Product p = (Product) productsDatabase.getRecord(productID);
         if (p == null) {
             System.out.println("Product not found!");
             return false;
@@ -81,6 +81,7 @@ public class EmployeeRole {
         if (changed) customerProductDatabase.saveToFile();
         return changed;
     }
+    @Override
     public void logout() {
         productsDatabase.saveToFile();
         customerProductDatabase.saveToFile();
