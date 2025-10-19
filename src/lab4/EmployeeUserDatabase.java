@@ -10,6 +10,21 @@ public class EmployeeUserDatabase {
         this.filename = filename;
         this.records = new ArrayList<>();
 
+        public void readFromFile() {
+            records.clear();   //clear el array 2bl kol mara han_read from file
+            try (Scanner file = new Scanner(new File(filename))) {
+                while (file.hasNextLine()) {
+                    String line = file.nextLine();
+                    if (!line.isEmpty()) {
+                        EmployeeUser em = createRecordFrom(line);
+                        records.add(em);
+                    }
+                }
+            } catch (FileNotFoundException e) {
+                System.out.println("File not found: " + filename);
+            }
+        }
+
         public EmployeeUser createRecordFrom(String line) {
             String[] parts = line.split(",");
             String id = parts[0];
