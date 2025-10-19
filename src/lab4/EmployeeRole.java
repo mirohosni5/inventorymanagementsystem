@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 
-public class EmployeeRole {
+public class EmployeeRole implements roleinterface {
     private ProductDatabase productsDatabase;
     private CustomerProductDatabase customerProductDatabase;
     public EmployeeRole() {
