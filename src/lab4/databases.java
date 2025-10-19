@@ -30,10 +30,10 @@ public abstract class databases {
         }
     }
 
-    
+
     public void readFromFile(){
         records.clear();
-        BufferedReader br = null;
+        BufferedReader br;
 
         try {
             br = new BufferedReader(new FileReader(filename));
