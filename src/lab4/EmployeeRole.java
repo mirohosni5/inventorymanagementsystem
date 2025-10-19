@@ -81,7 +81,7 @@ public class EmployeeRole implements roleinterface {
         if (changed) customerProductDatabase.saveToFile();
         return changed;
     }
-    protected void logout() {
+    pubnlic void logout() {
         productsDatabase.saveToFile();
         customerProductDatabase.saveToFile();
     }
