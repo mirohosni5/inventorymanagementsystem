@@ -1,4 +1,4 @@
 package lab4;
 
-public class roleinterface {
+public inte roleinterface {
 }
