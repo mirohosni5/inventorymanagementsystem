@@ -1,7 +1,7 @@
 package lab4;
 
 public class ProductDatabase extends databases {
-    public ProductDatabase(String filename){
+    public ProductDatabase(String filename) {
         super(filename);
     }
 
