@@ -22,7 +22,11 @@ public class AdminRole implements roleinterface
     public EmployeeUser[] getListOfEmployees() {
         ArrayList<Object> list=database.returnALLRecords();
         EmployeeUser[]employees=new EmployeeUser(list.size());
-        
+        for (int i = 0; i < list.size(); i++) {
+            employees[i] = (EmployeeUser) list.get(i); // cast each Object
+        }
+
+        return employees;
 
     }
 
