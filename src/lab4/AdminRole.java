@@ -32,7 +32,7 @@ public class AdminRole implements roleinterface {
         }
     }
 
-    protected void logout() {
+    public void logout() {
         database.saveToFile();
         System.out.println("Changes saved");
 }
