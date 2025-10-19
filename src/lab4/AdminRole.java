@@ -21,8 +21,8 @@ public class AdminRole implements roleinterface
 
     public EmployeeUser[] getListOfEmployees() {
         ArrayList<Object> list=database.returnALLRecords();
-        
-        return list.toArray(new EmployeeUser[0]);
+
+        r
     }
 
     public void removeEmployee(String key) {
