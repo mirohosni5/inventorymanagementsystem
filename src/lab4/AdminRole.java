@@ -20,7 +20,7 @@ public class AdminRole implements roleinterface
     }
 
     public EmployeeUser[] getListOfEmployees() {
-        ArrayList<Object> list=database.returnALLRecords()
+        ArrayList<Object> list=database.returnALLRecords();
         ArrayList<EmployeeUser> list = database.returnAllRecords();
         return list.toArray(new EmployeeUser[0]);
     }
