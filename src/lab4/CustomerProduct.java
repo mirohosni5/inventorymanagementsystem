@@ -3,7 +3,7 @@ package lab4;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public class CustomerProduct implements Record {
+public class CustomerProduct implements recordInterfaces {
     private String customerSSN;
     private String productID;
     private LocalDate purchaseDate;
