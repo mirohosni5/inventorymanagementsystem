@@ -1,6 +1,6 @@
 package lab4;
 
-public class EmployeeUser implements  {
+public class EmployeeUser implements recordInterfaces {
     private String employeeId;
     private String name;
     private String email;
