@@ -1,8 +1,9 @@
 package lab4;
+
 import java.time.LocalDate;
 
 public class CustomerProductDatabase extends databases {
-    public CustomerProductDatabase(String filename){
+    public CustomerProductDatabase(String filename) {
         super(filename);
     }
 
