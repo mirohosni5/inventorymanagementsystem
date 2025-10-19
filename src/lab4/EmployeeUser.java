@@ -20,39 +20,31 @@ public class EmployeeUser implements recordInterfaces {
 
     //getters
     public String getEmployeeId() {
-
         return employeeId;
     }
 
     public String getName() {
-
-        return employeeId;
+        return name;
     }
 
     public String getEmail() {
-
-
-        return employeeId;
+        return email;
     }
 
     public String getAddress() {
-
-        return employeeId;
+        return address;
     }
 
     public String getPhoneNumber() {
-        
-        return employeeId;
+        return phoneNumber;
     }
 
     //setters
     public void setEmployeeId(String employeeId) {
-
         this.employeeId = employeeId;
     }
 
     public void setName(String name) {
-
         this.name = name;
     }
 
@@ -68,25 +60,15 @@ public class EmployeeUser implements recordInterfaces {
         this.phoneNumber = phoneNumber;
     }
 
-
-
-        
-
-
-
     @Override
     public String lineRepresentation() {
-        return String.join(",",employeeId,name,email,address,phoneNumber);
+        return String.join(",", employeeId, name, email, address, phoneNumber);
     }
 
     @Override
     public String getSearchKey() {
-
         return employeeId;
     }
-
-
-
 
 }
 
