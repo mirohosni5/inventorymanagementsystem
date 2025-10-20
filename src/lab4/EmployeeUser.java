@@ -1,5 +1,5 @@
 package lab4;
-
+//hh
 public class EmployeeUser implements recordInterfaces {
     private String employeeId;
     private String name;
