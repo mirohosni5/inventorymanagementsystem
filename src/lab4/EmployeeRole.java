@@ -13,7 +13,7 @@ public class EmployeeRole implements roleinterface {
         productsDatabase.readFromFile();
         customerProductDatabase.readFromFile();
     }
-    public void addProduct(String productID,String productName,String manufacturerName,String supplierName,int quantity,float price) {
+    public void addProduct(String productID, String productName, String manufacturerName, String supplierName, int quantity, float price) {
         if (productsDatabase.contains(productID)) {
             System.out.println("Product with id " + productID + " already exists.");
             return;
@@ -23,39 +23,43 @@ public class EmployeeRole implements roleinterface {
         productsDatabase.saveToFile();
         System.out.println("Product added.");
     }
-    public Product[] getListOfProducts(){
-        ArrayList<Product> list = productsDatabase.returnAllRecords();
-        return list.toArray(new Product[0]);
-
+    public Product[] getListOfProducts() {
+        ArrayList<Object> list = productsDatabase.returnAllRecords();
+        Product[] products = new Product[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            products[i] = (Product) list.get(i);
+        }
+        return products;
     }
-    public CustomerProduct[] getListOfPurchasingOperations(){
-        ArrayList<CustomerProduct> list = customerProductDatabase.returnAllRecords();
-        return list.toArray(new CustomerProduct[0]);
-
+    public CustomerProduct[] getListOfPurchasingOperations() {
+        ArrayList<Object> list = customerProductDatabase.returnAllRecords();
+        CustomerProduct[] operations = new CustomerProduct[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            operations[i] = (CustomerProduct) list.get(i);
+        }
+        return operations;
     }
-    public boolean purchaseProduct(String customerSSN, String productID, LocalDate purchaseDate){
-        Product p = productsDatabase.getRecord(productID);
+    public boolean purchaseProduct(String customerSSN, String productID, LocalDate purchaseDate) {
+        Product p = (Product) productsDatabase.getRecord(productID);
         if (p == null) {
-            System.out.println("Product not found!");
-            return false;
-        }
+            System.out.println("Product not found.");
+            return false;}
         if (p.getQuantity() == 0) {
-            System.out.println("Product out of stock!");
-            return false;
-        }
+            System.out.println("Product out of stock.");
+            return false;}
         p.setQuantity(p.getQuantity() - 1);
-        CustomerProduct c= new CustomerProduct(customerSSN, productID, purchaseDate);
+        CustomerProduct c = new CustomerProduct(customerSSN, productID, purchaseDate);
         customerProductDatabase.insertRecord(c);
         productsDatabase.saveToFile();
         customerProductDatabase.saveToFile();
         System.out.println("Purchase recorded successfully.");
         return true;
     }
-    public double returnProduct(String customerSSN,String productID,LocalDate purchaseDate ,LocalDate returnDate){
+    public double returnProduct(String customerSSN, String productID, LocalDate purchaseDate, LocalDate returnDate) {
         productsDatabase.readFromFile();
         customerProductDatabase.readFromFile();
         if (returnDate.isBefore(purchaseDate)) return -1;
-        Product p = productsDatabase.getRecord(productID);
+        Product p = (Product) productsDatabase.getRecord(productID);
         if (p == null) return -1;
         String key = customerSSN + "," + productID + "," + purchaseDate.format(java.time.format.DateTimeFormatter.ofPattern("dd-MM-yyyy"));
         if (!customerProductDatabase.contains(key)) return -1;
@@ -70,14 +74,14 @@ public class EmployeeRole implements roleinterface {
     public boolean applyPayment(String customerSSN, LocalDate purchaseDate) {
         customerProductDatabase.readFromFile();
         boolean changed = false;
-        for (CustomerProduct c : new ArrayList<>(customerProductDatabase.returnAllRecords())) {
+
+        ArrayList<Object> records = customerProductDatabase.returnAllRecords();
+        for (Object obj : records) {
+            CustomerProduct c = (CustomerProduct) obj;
             if (c.getCustomerSSN().equals(customerSSN) && c.getPurchaseDate().equals(purchaseDate)) {
                 if (!c.isPaid()) {
                     c.setPaid(true);
-                    changed = true;
-                }
-            }
-        }
+                    changed = true;}}}
         if (changed) customerProductDatabase.saveToFile();
         return changed;
     }
