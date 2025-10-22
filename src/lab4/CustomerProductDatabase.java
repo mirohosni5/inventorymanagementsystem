@@ -1,6 +1,7 @@
 package lab4;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class CustomerProductDatabase extends databases {
     public CustomerProductDatabase(String filename) {
@@ -14,10 +15,14 @@ public class CustomerProductDatabase extends databases {
 
         String customerSSN = parts[0];
         String productID = parts[1];
-        LocalDate purchaseDate = LocalDate.parse(parts[2]);
+        DateTimeFormatter F = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        LocalDate purchaseDate = LocalDate.parse(parts[2], F);
         boolean paid = Boolean.parseBoolean(parts[3]);
 
-        return new CustomerProduct(customerSSN, productID, purchaseDate);
+        CustomerProduct c = new CustomerProduct(customerSSN, productID, purchaseDate);
+        c.setPaid(paid);
+        return c;
+
     }
 
 }
