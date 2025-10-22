@@ -7,6 +7,7 @@ import java.util.ArrayList;
 public class EmployeeRole implements roleinterface {
     private ProductDatabase productsDatabase;
     private CustomerProductDatabase customerProductDatabase;
+    public static final float DEFAULTPRICE=1000;
     public EmployeeRole() {
         productsDatabase = new ProductDatabase("Products.txt");
         customerProductDatabase = new CustomerProductDatabase("CustomersProducts.txt");
@@ -19,6 +20,16 @@ public class EmployeeRole implements roleinterface {
             return;
         }
         Product p = new Product(productID, productName, manufacturerName, supplierName, quantity, price);
+        productsDatabase.insertRecord(p);
+        productsDatabase.saveToFile();
+        System.out.println("Product added.");
+    }
+    public void addProduct(String productID, String productName, String manufacturerName, String supplierName, int quantity){
+        if (productsDatabase.contains(productID)) {
+            System.out.println("Product with id " + productID + " already exists.");
+            return;
+        }
+        Product p=new Product(productID, productName, manufacturerName, supplierName, quantity,DEFAULTPRICE);
         productsDatabase.insertRecord(p);
         productsDatabase.saveToFile();
         System.out.println("Product added.");
